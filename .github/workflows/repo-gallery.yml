@@ -1,0 +1,81 @@
+name: Generate Repo Gallery
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate gallery SVG
+        run: |
+          mkdir -p dist
+          cat << 'EOF' > dist/repo-gallery.svg
+          <svg width="800" height="260" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
+
+          <style>
+
+          text {
+            font-family: system-ui, sans-serif;
+            fill: #c9d1d9;
+          }
+
+          .card {
+            fill:#161b22;
+            stroke:#30363d;
+            stroke-width:1;
+            rx:12;
+            opacity:0;
+            transform:translateY(30px);
+            animation:appear 0.8s forwards;
+          }
+
+          .c1 { animation-delay:0.3s }
+          .c2 { animation-delay:0.8s }
+          .c3 { animation-delay:1.3s }
+
+          @keyframes appear {
+            to {opacity:1; transform:translateY(0)}
+          }
+
+          </style>
+
+          <!-- Card 1 -->
+          <a href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker">
+          <rect class="card c1" x="40" y="60" width="220" height="140"/>
+          <text x="60" y="100" font-size="18"> AttendMate</text>
+          <text x="60" y="130" font-size="13">Attendance tracker</text>
+          <text x="60" y="150" font-size="13">Bunk calculator</text>
+          </a>
+
+          <!-- Card 2 -->
+          <a href="https://github.com/YTFL/HonZuki-BookTracker">
+          <rect class="card c2" x="290" y="60" width="220" height="140"/>
+          <text x="310" y="100" font-size="18"> HonZuki</text>
+          <text x="310" y="130" font-size="13">Book tracking</text>
+          <text x="310" y="150" font-size="13">Reading progress</text>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter">
+          <rect class="card c3" x="540" y="60" width="220" height="140"/>
+          <text x="560" y="100" font-size="18"> PDFark</text>
+          <text x="560" y="130" font-size="13">Dark mode PDF</text>
+          <text x="560" y="150" font-size="13">Comfort reading</text>
+          </a>
+
+          </svg>
+          EOF
+
+      - name: Deploy gallery
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
