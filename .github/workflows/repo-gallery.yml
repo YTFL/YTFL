@@ -28,28 +28,25 @@ jobs:
           .card {
             rx:14;
             cursor:pointer;
-            transition: transform 0.25s ease;
+            transition: transform 0.2s ease;
           }
 
           .card:hover {
             transform: translateY(-6px);
           }
 
-          .border {
-            stroke-width:2;
-            fill:none;
-          }
-
           </style>
 
-          <!-- AttendMate (silver tint) -->
+          <!-- AttendMate -->
 
           <a href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker">
 
-          <rect class="card" x="40" y="60" width="220" height="140"
-          fill="#1f2428"/>
-          <rect class="border" x="40" y="60" width="220" height="140"
-          stroke="#9ca3af"/>
+          <rect class="card"
+          x="40" y="60"
+          width="220" height="140"
+          fill="#1f2428"
+          stroke="#9ca3af"
+          stroke-width="2"/>
 
           <text x="65" y="100" font-size="18">📊 AttendMate</text>
           <text x="65" y="130" font-size="13">Attendance tracker</text>
@@ -57,14 +54,16 @@ jobs:
 
           </a>
 
-          <!-- HonZuki (purple tint) -->
+          <!-- HonZuki -->
 
           <a href="https://github.com/YTFL/HonZuki-BookTracker">
 
-          <rect class="card" x="310" y="60" width="220" height="140"
-          fill="#211c2e"/>
-          <rect class="border" x="310" y="60" width="220" height="140"
-          stroke="#8b5cf6"/>
+          <rect class="card"
+          x="310" y="60"
+          width="220" height="140"
+          fill="#211c2e"
+          stroke="#8b5cf6"
+          stroke-width="2"/>
 
           <text x="335" y="100" font-size="18">📚 HonZuki</text>
           <text x="335" y="130" font-size="13">Book tracker</text>
@@ -72,14 +71,16 @@ jobs:
 
           </a>
 
-          <!-- PDFark (cyan tint) -->
+          <!-- PDFark -->
 
           <a href="https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter">
 
-          <rect class="card" x="580" y="60" width="220" height="140"
-          fill="#182c2f"/>
-          <rect class="border" x="580" y="60" width="220" height="140"
-          stroke="#22d3ee"/>
+          <rect class="card"
+          x="580" y="60"
+          width="220" height="140"
+          fill="#182c2f"
+          stroke="#22d3ee"
+          stroke-width="2"/>
 
           <text x="605" y="100" font-size="18">🌙 PDFark</text>
           <text x="605" y="130" font-size="13">Dark mode PDF</text>
