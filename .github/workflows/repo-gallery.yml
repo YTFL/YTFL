@@ -18,33 +18,11 @@ jobs:
           cat << 'EOF' > dist/repo-gallery.svg
           <svg width="840" height="260" viewBox="0 0 840 260" xmlns="http://www.w3.org/2000/svg">
 
-          <defs>
-
-          <linearGradient id="silverGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="220" y2="0">
-          <stop offset="0%" stop-color="#E5E5E5"/>
-          <stop offset="50%" stop-color="#9CA3AF"/>
-          <stop offset="100%" stop-color="#E5E5E5"/>
-          </linearGradient>
-
-          <linearGradient id="purpleGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="220" y2="0">
-          <stop offset="0%" stop-color="#A78BFA"/>
-          <stop offset="50%" stop-color="#6D28D9"/>
-          <stop offset="100%" stop-color="#A78BFA"/>
-          </linearGradient>
-
-          <linearGradient id="cyanGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="220" y2="0">
-          <stop offset="0%" stop-color="#67E8F9"/>
-          <stop offset="50%" stop-color="#06B6D4"/>
-          <stop offset="100%" stop-color="#67E8F9"/>
-          </linearGradient>
-
-          </defs>
-
           <style>
 
           text {
             font-family: system-ui, sans-serif;
-            fill: #ffffff;
+            fill: #c9d1d9;
           }
 
           .card {
@@ -54,57 +32,56 @@ jobs:
           }
 
           .card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-6px);
           }
 
           .border {
-            stroke-width:3;
+            stroke-width:2;
             fill:none;
-            stroke-dasharray:600;
-            animation:borderMove 6s linear infinite;
-          }
-
-          @keyframes borderMove {
-            from { stroke-dashoffset:0 }
-            to { stroke-dashoffset:600 }
           }
 
           </style>
 
-          <!-- AttendMate -->
+          <!-- AttendMate (silver tint) -->
 
           <a href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker">
 
-          <rect class="card" x="40" y="60" width="220" height="140" fill="#C0C0C0"/>
-          <rect class="border" x="40" y="60" width="220" height="140" stroke="url(#silverGrad)"/>
+          <rect class="card" x="40" y="60" width="220" height="140"
+          fill="#1f2428"/>
+          <rect class="border" x="40" y="60" width="220" height="140"
+          stroke="#9ca3af"/>
 
-          <text x="65" y="100" font-size="18">AttendMate</text>
+          <text x="65" y="100" font-size="18">📊 AttendMate</text>
           <text x="65" y="130" font-size="13">Attendance tracker</text>
           <text x="65" y="150" font-size="13">Bunk calculator</text>
 
           </a>
 
-          <!-- HonZuki -->
+          <!-- HonZuki (purple tint) -->
 
           <a href="https://github.com/YTFL/HonZuki-BookTracker">
 
-          <rect class="card" x="310" y="60" width="220" height="140" fill="#6D28D9"/>
-          <rect class="border" x="310" y="60" width="220" height="140" stroke="url(#purpleGrad)"/>
+          <rect class="card" x="310" y="60" width="220" height="140"
+          fill="#211c2e"/>
+          <rect class="border" x="310" y="60" width="220" height="140"
+          stroke="#8b5cf6"/>
 
-          <text x="335" y="100" font-size="18">HonZuki</text>
+          <text x="335" y="100" font-size="18">📚 HonZuki</text>
           <text x="335" y="130" font-size="13">Book tracker</text>
           <text x="335" y="150" font-size="13">Reading progress</text>
 
           </a>
 
-          <!-- PDFark -->
+          <!-- PDFark (cyan tint) -->
 
           <a href="https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter">
 
-          <rect class="card" x="580" y="60" width="220" height="140" fill="#06B6D4"/>
-          <rect class="border" x="580" y="60" width="220" height="140" stroke="url(#cyanGrad)"/>
+          <rect class="card" x="580" y="60" width="220" height="140"
+          fill="#182c2f"/>
+          <rect class="border" x="580" y="60" width="220" height="140"
+          stroke="#22d3ee"/>
 
-          <text x="605" y="100" font-size="18">PDFark</text>
+          <text x="605" y="100" font-size="18">🌙 PDFark</text>
           <text x="605" y="130" font-size="13">Dark mode PDF</text>
           <text x="605" y="150" font-size="13">Comfort reading</text>
 
