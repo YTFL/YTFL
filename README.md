@@ -33,8 +33,8 @@ Software tools, productivity utilities, and building small focused applications.
 ## Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=YTFL&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" />
-  <img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=YTFL&layout=compact&hide_border=true&theme=transparent" />
+  <img height="165" src="https://github.com/YTFL/YTFL/blob/stats/generated/stats.svg" />
+  <img height="165" src="https://github.com/YTFL/YTFL/blob/stats/generated/languages.svg" />
 </p>
 
 <p align="center">
