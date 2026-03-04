@@ -1,5 +1,3 @@
-# YTFL
-
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=1F6FEB&center=true&vCenter=true&width=600&lines=Building+practical+software+tools;Developer+utilities+and+productivity+apps;Simple+solutions+to+real+problems" />
 </p>
@@ -12,9 +10,9 @@ Developer building practical software utilities that solve everyday problems thr
 
 ## Projects
 
-![AttendMate](https://img.shields.io/badge/AttendMate-Attendance%20Tracker%20%26%20Bunk%20Calculator-1f6feb?style=for-the-badge)
-![HonZuki](https://img.shields.io/badge/HonZuki-Book%20Tracker-1f6feb?style=for-the-badge)
-![PDFark](https://img.shields.io/badge/PDFark-PDF%20Dark%20Mode%20Converter-1f6feb?style=for-the-badge)
+[![AttendMate](https://img.shields.io/badge/AttendMate-Attendance%20Tracker%20%26%20Bunk%20Calculator-2ea44f?style=flat)](https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker)
+[![HonZuki](https://img.shields.io/badge/HonZuki-Book%20Tracker-8b5cf6?style=flat)](https://github.com/YTFL/HonZuki-BookTracker)
+[![PDFark](https://img.shields.io/badge/PDFark-PDF%20Dark%20Mode%20Converter-f59e0b?style=flat)](https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter)
 
 ---
 
@@ -32,15 +30,6 @@ Software tools, productivity utilities, and building small focused applications.
 
 ---
 
-## Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YTFL&show_icons=true&theme=transparent)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YTFL&layout=compact&theme=transparent)
-
----
-
-![Profile Views](https://komarev.com/ghpvc/?username=YTFL&color=blue)
 
 ---
 
