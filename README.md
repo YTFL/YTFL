@@ -15,7 +15,7 @@ Developer building practical software utilities that solve everyday problems thr
 
 ## Featured Projects
 
-![Repo Gallery](https://github.com/YTFL/YTFL/blob/output/repo-gallery.svg)
+![Repo Gallery](https://github.com/YTFL/YTFL/blob/output/gallery/repo-gallery.svg)
 
 ---
 
@@ -25,4 +25,4 @@ Developer building practical software utilities that solve everyday problems thr
 
 ---
 
-![Snake animation](https://github.com/YTFL/YTFL/blob/output/github-contribution-grid-snake.svg)
+![Snake](https://github.com/YTFL/YTFL/blob/output/snake/github-contribution-grid-snake.svg)
