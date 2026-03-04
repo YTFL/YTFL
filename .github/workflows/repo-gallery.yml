@@ -16,57 +16,98 @@ jobs:
         run: |
           mkdir -p dist
           cat << 'EOF' > dist/repo-gallery.svg
-          <svg width="800" height="260" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
+          <svg width="840" height="260" viewBox="0 0 840 260" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+
+          <linearGradient id="silverGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="220" y2="0">
+          <stop offset="0%" stop-color="#E5E5E5"/>
+          <stop offset="50%" stop-color="#9CA3AF"/>
+          <stop offset="100%" stop-color="#E5E5E5"/>
+          </linearGradient>
+
+          <linearGradient id="purpleGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="220" y2="0">
+          <stop offset="0%" stop-color="#A78BFA"/>
+          <stop offset="50%" stop-color="#6D28D9"/>
+          <stop offset="100%" stop-color="#A78BFA"/>
+          </linearGradient>
+
+          <linearGradient id="cyanGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="220" y2="0">
+          <stop offset="0%" stop-color="#67E8F9"/>
+          <stop offset="50%" stop-color="#06B6D4"/>
+          <stop offset="100%" stop-color="#67E8F9"/>
+          </linearGradient>
+
+          </defs>
 
           <style>
 
           text {
             font-family: system-ui, sans-serif;
-            fill: #c9d1d9;
+            fill: #ffffff;
           }
 
           .card {
-            fill:#161b22;
-            stroke:#30363d;
-            stroke-width:1;
-            rx:12;
-            opacity:0;
-            transform:translateY(30px);
-            animation:appear 0.8s forwards;
+            rx:14;
+            cursor:pointer;
+            transition: transform 0.25s ease;
           }
 
-          .c1 { animation-delay:0.3s }
-          .c2 { animation-delay:0.8s }
-          .c3 { animation-delay:1.3s }
+          .card:hover {
+            transform: translateY(-8px);
+          }
 
-          @keyframes appear {
-            to {opacity:1; transform:translateY(0)}
+          .border {
+            stroke-width:3;
+            fill:none;
+            stroke-dasharray:600;
+            animation:borderMove 6s linear infinite;
+          }
+
+          @keyframes borderMove {
+            from { stroke-dashoffset:0 }
+            to { stroke-dashoffset:600 }
           }
 
           </style>
 
-          <!-- Card 1 -->
+          <!-- AttendMate -->
+
           <a href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker">
-          <rect class="card c1" x="40" y="60" width="220" height="140"/>
-          <text x="60" y="100" font-size="18"> AttendMate</text>
-          <text x="60" y="130" font-size="13">Attendance tracker</text>
-          <text x="60" y="150" font-size="13">Bunk calculator</text>
+
+          <rect class="card" x="40" y="60" width="220" height="140" fill="#C0C0C0"/>
+          <rect class="border" x="40" y="60" width="220" height="140" stroke="url(#silverGrad)"/>
+
+          <text x="65" y="100" font-size="18">📊 AttendMate</text>
+          <text x="65" y="130" font-size="13">Attendance tracker</text>
+          <text x="65" y="150" font-size="13">Bunk calculator</text>
+
           </a>
 
-          <!-- Card 2 -->
+          <!-- HonZuki -->
+
           <a href="https://github.com/YTFL/HonZuki-BookTracker">
-          <rect class="card c2" x="290" y="60" width="220" height="140"/>
-          <text x="310" y="100" font-size="18"> HonZuki</text>
-          <text x="310" y="130" font-size="13">Book tracking</text>
-          <text x="310" y="150" font-size="13">Reading progress</text>
+
+          <rect class="card" x="310" y="60" width="220" height="140" fill="#6D28D9"/>
+          <rect class="border" x="310" y="60" width="220" height="140" stroke="url(#purpleGrad)"/>
+
+          <text x="335" y="100" font-size="18">📚 HonZuki</text>
+          <text x="335" y="130" font-size="13">Book tracker</text>
+          <text x="335" y="150" font-size="13">Reading progress</text>
+
           </a>
 
-          <!-- Card 3 -->
+          <!-- PDFark -->
+
           <a href="https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter">
-          <rect class="card c3" x="540" y="60" width="220" height="140"/>
-          <text x="560" y="100" font-size="18"> PDFark</text>
-          <text x="560" y="130" font-size="13">Dark mode PDF</text>
-          <text x="560" y="150" font-size="13">Comfort reading</text>
+
+          <rect class="card" x="580" y="60" width="220" height="140" fill="#06B6D4"/>
+          <rect class="border" x="580" y="60" width="220" height="140" stroke="url(#cyanGrad)"/>
+
+          <text x="605" y="100" font-size="18">🌙 PDFark</text>
+          <text x="605" y="130" font-size="13">Dark mode PDF</text>
+          <text x="605" y="150" font-size="13">Comfort reading</text>
+
           </a>
 
           </svg>
