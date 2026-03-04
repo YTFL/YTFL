@@ -15,4 +15,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           user: YTFL
           template: classic
-          base: header, activity, community, repositories
+          base: header, activity
