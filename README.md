@@ -30,12 +30,11 @@ Software tools, productivity utilities, and building small focused applications.
 
 ---
 
-## Stats
+## GitHub Metrics
 
-<p align="center">
-  <img height="165" src="https://github.com/YTFL/YTFL/blob/stats/generated/stats.svg" />
-  <img height="165" src="https://github.com/YTFL/YTFL/blob/stats/generated/languages.svg" />
-</p>
+![Metrics](./github-metrics.svg)
+
+---
 
 <p align="center">
   <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=YTFL&bg_color=00000000&color=1f6feb&line=1f6feb&point=1f6feb&area=true&hide_border=true" />
