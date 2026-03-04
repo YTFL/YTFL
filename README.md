@@ -15,9 +15,7 @@ Developer building practical software utilities that solve everyday problems thr
 
 ## Featured Projects
 
-[![AttendMate](https://img.shields.io/badge/AttendMate-Attendance%20Tracker-2ea44f?style=flat-square)](https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker)
-[![HonZuki](https://img.shields.io/badge/HonZuki-Book%20Tracker-8b5cf6?style=flat-square)](https://github.com/YTFL/HonZuki-BookTracker)
-[![PDFark](https://img.shields.io/badge/PDFark-PDF%20Dark%20Mode%20Converter-f59e0b?style=flat-square)](https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter)
+![Repo Gallery](https://github.com/YTFL/YTFL/blob/output/repo-gallery.svg)
 
 ---
 
