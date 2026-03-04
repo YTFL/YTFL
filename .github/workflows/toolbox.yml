@@ -10,41 +10,74 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Generate toolbox SVG
         run: |
           mkdir -p dist
           cat << 'EOF' > dist/toolbox.svg
-          <svg width="600" height="220" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+          <svg width="700" height="260" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
 
           <style>
-          .tool { opacity: 0; transform: translateY(30px); animation: rise 0.8s forwards; }
-          .tool1 { animation-delay: 0.5s; }
-          .tool2 { animation-delay: 1.2s; }
-          .tool3 { animation-delay: 1.9s; }
+
+          text {
+            font-family: system-ui, sans-serif;
+            fill: #c9d1d9;
+          }
+
+          .glow {
+            filter: drop-shadow(0 0 6px #58a6ff);
+          }
+
+          .tool {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: rise 1s forwards;
+          }
+
+          .t1 { animation-delay: 1.5s; }
+          .t2 { animation-delay: 2.5s; }
+          .t3 { animation-delay: 3.5s; }
+
+          .lid {
+            transform-origin: left center;
+            animation: openLid 1s forwards;
+            animation-delay: 0.5s;
+          }
+
+          @keyframes openLid {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(-35deg); }
+          }
 
           @keyframes rise {
             to { opacity: 1; transform: translateY(0); }
           }
 
-          text {
-            font-family: Arial, Helvetica, sans-serif;
-            fill: #c9d1d9;
-          }
           </style>
 
-          <!-- Toolbox -->
-          <rect x="220" y="140" width="160" height="40" rx="8" fill="#30363d"/>
-          <rect x="250" y="120" width="100" height="25" rx="5" fill="#30363d"/>
+          <!-- Title -->
+          <text x="260" y="40" font-size="20">🧰 Tools by YTFL</text>
 
-          <text x="260" y="110" font-size="16">🧰 Tools by YTFL</text>
+          <!-- Toolbox base -->
+          <rect x="240" y="160" width="220" height="60" rx="12" fill="#30363d"/>
+
+          <!-- Toolbox lid -->
+          <rect class="lid" x="240" y="130" width="220" height="40" rx="10" fill="#3a3f47"/>
 
           <!-- Tools -->
-          <text class="tool tool1" x="80" y="200" font-size="16">🔧 AttendMate</text>
-          <text class="tool tool2" x="250" y="200" font-size="16">📚 HonZuki</text>
-          <text class="tool tool3" x="420" y="200" font-size="16">🌙 PDFark</text>
+
+          <a href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker">
+          <text class="tool t1 glow" x="120" y="230" font-size="18">🔧 AttendMate</text>
+          </a>
+
+          <a href="https://github.com/YTFL/HonZuki-BookTracker">
+          <text class="tool t2 glow" x="300" y="230" font-size="18">📚 HonZuki</text>
+          </a>
+
+          <a href="https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter">
+          <text class="tool t3 glow" x="480" y="230" font-size="18">🌙 PDFark</text>
+          </a>
 
           </svg>
           EOF
