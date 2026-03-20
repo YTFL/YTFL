@@ -20,13 +20,20 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Prepare writable copies
+      # ✅ Copy files to regain ownership
+      - name: Prepare writable files
         run: |
           mkdir -p dist-fixed
           cp dist/github-contribution-grid-snake.svg dist-fixed/
           cp dist/github-contribution-grid-snake-dark.svg dist-fixed/
+
+      # ✅ Now we can modify safely
+      - name: Force refresh
+        run: |
+          echo "<!-- $(date) -->" >> dist-fixed/github-contribution-grid-snake.svg
+          echo "<!-- $(date) -->" >> dist-fixed/github-contribution-grid-snake-dark.svg
 
       - name: Deploy to snake-output branch
         uses: peaceiris/actions-gh-pages@v4
