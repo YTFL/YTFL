@@ -6,15 +6,15 @@
   <!-- Ground -->
   <rect y="160" width="800" height="80" fill="#0a0f14"/>
 
-  <!-- Undertaker Image (bottom-left) -->
-  <image href="undertaker.png"
-         x="60"
+  <!-- Undertaker Image (bottom-right, FIXED URL) -->
+  <image href="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/undertaker.png"
+         x="630"
          y="100"
          width="130"
          height="130"
          opacity="0.85" />
 
-  <!-- Spider Lily (bottom-left corner, deeper) -->
+  <!-- Spider Lily (bottom-left corner) -->
   <g transform="translate(40,180)" stroke="#ff2e2e" stroke-width="1.3" fill="none" opacity="0.9">
 
     <path d="M0 -25 C 12 -45, 28 -45, 18 -10"/>
