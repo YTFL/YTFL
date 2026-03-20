@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia-banner.svg" />
+</p>
+
 Developer building practical software utilities that solve everyday problems through simple, focused applications.
 
 <p align="center">
@@ -29,6 +33,4 @@ Developer building practical software utilities that solve everyday problems thr
 
 ---
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia-banner.svg" />
-</p>
+
