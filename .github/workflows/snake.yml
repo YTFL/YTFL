@@ -22,13 +22,15 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # Force change to avoid stale cache / identical output issues
-      - name: Force refresh
+      - name: Fix permissions
+        run: chmod -R 777 dist
+
+      - name: Force refresh (avoid stale cache)
         run: |
           echo "<!-- $(date) -->" >> dist/github-contribution-grid-snake.svg
           echo "<!-- $(date) -->" >> dist/github-contribution-grid-snake-dark.svg
 
-      - name: Deploy to snake branch
+      - name: Deploy to snake-output branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
