@@ -1,100 +1,215 @@
-<svg width="100%" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+  <svg width="100%" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Background -->
-  <rect width="800" height="220" fill="#0d1117"/>
+    <!-- Definitions for Realistic Sakura Petals -->
+    <defs>
+        <!-- The core petal shape with a cleft -->
+        <path id="petal-shape" d="M 0,0 C -4,-6 -6,-10 -2,-13 Q 0,-11 2,-13 C 6,-10 4,-6 0,0 Z" />
+        
+        <!-- Tumbling slowly clockwise -->
+        <g id="petal1">
+          <g transform="scale(0.8)">
+            <use href="#petal-shape" fill="#f778ba" opacity="0.9">
+              <animateTransform attributeName="transform" type="rotate" values="15; 375" dur="5s" repeatCount="indefinite" />
+            </use>
+          </g>
+        </g>
+        
+        <!-- Tumbling counter-clockwise, slightly larger, lighter pink -->
+        <g id="petal2">
+          <g transform="scale(1)">
+            <use href="#petal-shape" fill="#fbb1d9" opacity="0.85">
+              <animateTransform attributeName="transform" type="rotate" values="45; -315" dur="7s" repeatCount="indefinite" />
+            </use>
+          </g>
+        </g>
+        
+        <!-- Tumbling fast clockwise, darker pink, smaller -->
+        <g id="petal3">
+          <g transform="scale(0.6)">
+            <use href="#petal-shape" fill="#ff8dc7" opacity="0.95">
+              <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="3.5s" repeatCount="indefinite" />
+            </use>
+          </g>
+        </g>
 
-  <!-- Piano white keys -->
-  <rect y="180" width="800" height="40" fill="#ffffff"/>
+        <!-- Tumbling slowly counter-clockwise, very light pink -->
+        <g id="petal4">
+          <g transform="scale(0.9)">
+            <use href="#petal-shape" fill="#ffe0f0" opacity="0.8">
+              <animateTransform attributeName="transform" type="rotate" values="70; -290" dur="8s" repeatCount="indefinite" />
+            </use>
+          </g>
+        </g>
 
-  <!-- Black keys pattern (correct repeating structure) -->
-  <g fill="#000">
-    <!-- Pattern repeats every 140px -->
-    
-    <!-- Group 1 -->
-    <rect x="40"  y="180" width="16" height="25"/>
-    <rect x="80"  y="180" width="16" height="25"/>
+        <!-- Realistic Piano Key Gradients -->
+        <linearGradient id="white-key" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#f3f4f6" />
+          <stop offset="100%" stop-color="#ffffff" />
+        </linearGradient>
 
-    <!-- Group 2 -->
-    <rect x="140" y="180" width="16" height="25"/>
-    <rect x="180" y="180" width="16" height="25"/>
-    <rect x="220" y="180" width="16" height="25"/>
+        <linearGradient id="black-key" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#111111" />
+          <stop offset="85%" stop-color="#2a2a2a" />
+          <stop offset="95%" stop-color="#555555" />
+          <stop offset="100%" stop-color="#000000" />
+        </linearGradient>
 
-    <!-- Repeat -->
-    <rect x="280" y="180" width="16" height="25"/>
-    <rect x="320" y="180" width="16" height="25"/>
+        <linearGradient id="key-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="rgba(0,0,0,0.6)" />
+          <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+        </linearGradient>
 
-    <rect x="380" y="180" width="16" height="25"/>
-    <rect x="420" y="180" width="16" height="25"/>
-    <rect x="460" y="180" width="16" height="25"/>
+        <!-- Piano Octave Pattern (168px wide = 7 white keys @ 24px each) -->
+        <pattern id="octave" width="168" height="50" patternUnits="userSpaceOnUse">
+          <!-- White keys background -->
+          <rect x="0" y="0" width="168" height="50" fill="url(#white-key)" />
+          
+          <!-- White key separators -->
+          <path d="M 24 0 L 24 50 M 48 0 L 48 50 M 72 0 L 72 50 M 96 0 L 96 50 M 120 0 L 120 50 M 144 0 L 144 50" stroke="#d1d5db" stroke-width="1.5" />
+          
+          <!-- White key front edge highlighting (3D effect) -->
+          <path d="M 0 49.5 L 168 49.5" stroke="#fff" stroke-width="1" />
+          
+          <!-- Shadow for black keys -->
+          <g fill="rgba(0,0,0,0.25)">
+              <rect x="17" y="0" width="14" height="33" rx="1.5" />
+              <rect x="41" y="0" width="14" height="33" rx="1.5" />
+              <rect x="89" y="0" width="14" height="33" rx="1.5" />
+              <rect x="113" y="0" width="14" height="33" rx="1.5" />
+              <rect x="137" y="0" width="14" height="33" rx="1.5" />
+          </g>
+          
+          <!-- Black keys main bodies -->
+          <rect x="15" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
+          <rect x="39" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
+          <rect x="87" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
+          <rect x="111" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
+          <rect x="135" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
+          
+          <!-- Black keys top ridge highlight (makes it look 3D and rounded) -->
+          <rect x="16.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
+          <rect x="40.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
+          <rect x="88.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
+          <rect x="112.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
+          <rect x="136.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
+        </pattern>
+    </defs>
 
-    <rect x="520" y="180" width="16" height="25"/>
-    <rect x="560" y="180" width="16" height="25"/>
+    <!-- Background -->
+    <rect width="800" height="220" fill="#0d1117"/>
 
-    <rect x="620" y="180" width="16" height="25"/>
-    <rect x="660" y="180" width="16" height="25"/>
-    <rect x="700" y="180" width="16" height="25"/>
-  </g>
+    <!-- Piano Keys Section -->
+    <g transform="translate(0, 170)">
+      <!-- The repeating octave pattern -->
+      <rect width="800" height="50" fill="url(#octave)" />
+      
+      <!-- Ambient shadow cast by the fallboard onto the keys -->
+      <rect x="0" y="0" width="800" height="8" fill="url(#key-shadow)" />
+    </g>
 
-  <!-- Sakura petals (more + varied speed + drift) -->
-  <g fill="#f778ba" opacity="0.9">
+    <!-- Kaori's Violin (Ghostly/Line-art style memory) -->
+    <g transform="translate(620, 20)">
+        <!-- Gentle floating animation for the violin -->
+        <animateTransform attributeName="transform" type="translate" values="620,20; 620,12; 620,20" dur="6s" repeatCount="indefinite"/>
+        
+        <g transform="rotate(22, 50, 100) scale(1.1)" fill="none" stroke="#f0f6fc" stroke-linecap="round" stroke-linejoin="round">
+            
+            <!-- Pink/Sakura Glow Layer -->
+            <g stroke="#f778ba" stroke-width="6" opacity="0.15">
+                <path d="M 50 50 C 20 45, 15 85, 30 100 C 40 105, 40 115, 30 120 C 5 130, 10 185, 50 190 C 90 185, 95 130, 70 120 C 60 115, 60 105, 70 100 C 85 85, 80 45, 50 50 Z" />
+            </g>
 
-    <!-- Fast small petals -->
-    <circle cx="80" cy="10" r="2.5">
-      <animate attributeName="cy" values="10;200" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="80;100;70;90" dur="4s" repeatCount="indefinite"/>
-    </circle>
+            <!-- Main Violin Body Outline -->
+            <path d="M 50 50 C 20 45, 15 85, 30 100 C 40 105, 40 115, 30 120 C 5 130, 10 185, 50 190 C 90 185, 95 130, 70 120 C 60 115, 60 105, 70 100 C 85 85, 80 45, 50 50 Z" stroke-width="1.5" opacity="0.5"/>
 
-    <circle cx="200" cy="30" r="2.5">
-      <animate attributeName="cy" values="30;200" dur="4.5s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="200;220;180;210" dur="4.5s" repeatCount="indefinite"/>
-    </circle>
+            <!-- Fingerboard -->
+            <polygon points="46,50 44,110 56,110 54,50" fill="#f0f6fc" opacity="0.1" stroke="none"/>
 
-    <!-- Medium petals -->
-    <circle cx="350" cy="20" r="3">
-      <animate attributeName="cy" values="20;200" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="350;370;330;360" dur="6s" repeatCount="indefinite"/>
-    </circle>
+            <!-- Strings -->
+            <line x1="47.5" y1="0" x2="46" y2="140" stroke="#f0f6fc" stroke-width="0.5" opacity="0.4"/>
+            <line x1="49.5" y1="0" x2="48.5" y2="140" stroke="#f0f6fc" stroke-width="0.5" opacity="0.4"/>
+            <line x1="51.5" y1="0" x2="51.5" y2="140" stroke="#f0f6fc" stroke-width="0.5" opacity="0.4"/>
+            <line x1="53.5" y1="0" x2="54" y2="140" stroke="#f0f6fc" stroke-width="0.5" opacity="0.4"/>
 
-    <circle cx="500" cy="40" r="3">
-      <animate attributeName="cy" values="40;200" dur="5.5s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="500;520;480;510" dur="5.5s" repeatCount="indefinite"/>
-    </circle>
+            <!-- Neck, Scroll, and Pegs -->
+            <path d="M 46 50 L 46 0 C 46 -10, 40 -15, 45 -20 C 50 -25, 55 -20, 50 -15 C 48 -10, 54 -10, 54 0 L 54 50" stroke-width="1.5" opacity="0.5"/>
+            <line x1="42" y1="-10" x2="58" y2="-10" stroke-width="1" opacity="0.5"/>
+            <line x1="43" y1="-5" x2="57" y2="-5" stroke-width="1" opacity="0.5"/>
 
-    <!-- Slow drifting petals -->
-    <circle cx="650" cy="15" r="3.5">
-      <animate attributeName="cy" values="15;200" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="650;680;620;660" dur="8s" repeatCount="indefinite"/>
-    </circle>
+            <!-- Bridge -->
+            <path d="M 40 125 Q 50 122 60 125" stroke-width="2" opacity="0.7"/>
 
-    <circle cx="720" cy="60" r="3.5">
-      <animate attributeName="cy" values="60;200" dur="7s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="720;750;690;730" dur="7s" repeatCount="indefinite"/>
-    </circle>
+            <!-- Tailpiece -->
+            <path d="M 45 140 L 55 140 L 57 180 Q 50 188 43 180 Z" fill="#f0f6fc" opacity="0.1" stroke-width="1" stroke="#f0f6fc"/>
 
-    <!-- Extra density -->
-    <circle cx="120" cy="50" r="2">
-      <animate attributeName="cy" values="50;200" dur="5s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="120;140;100;130" dur="5s" repeatCount="indefinite"/>
-    </circle>
+            <!-- F-Holes -->
+            <path d="M 32 110 C 38 115, 30 130, 36 135" stroke-width="1" opacity="0.5"/>
+            <path d="M 68 110 C 62 115, 70 130, 64 135" stroke-width="1" opacity="0.5"/>
 
-    <circle cx="420" cy="10" r="2">
-      <animate attributeName="cy" values="10;200" dur="4.8s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="420;440;400;430" dur="4.8s" repeatCount="indefinite"/>
-    </circle>
+            <!-- Bow crossing diagonally -->
+            <g opacity="0.6">
+                <!-- Bow stick -->
+                <line x1="-15" y1="120" x2="115" y2="85" stroke="#f0f6fc" stroke-width="1.5"/>
+                <!-- Bow hair -->
+                <line x1="-10" y1="125" x2="110" y2="90" stroke="#f0f6fc" stroke-width="0.5" opacity="0.8"/>
+            </g>
+        </g>
+    </g>
 
-  </g>
+    <!-- Realistic Sakura Petals -->
+    <g>
+      <!-- Fast small petals -->
+      <use href="#petal3" x="80" y="10">
+        <animate attributeName="y" values="-20;240" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="80;100;70;90" dur="4s" repeatCount="indefinite"/>
+      </use>
+      <use href="#petal1" x="200" y="30">
+        <animate attributeName="y" values="-20;240" dur="4.5s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="200;220;180;210" dur="4.5s" repeatCount="indefinite"/>
+      </use>
 
-  <!-- Username -->
-  <text x="50%" y="75" text-anchor="middle" fill="#58A6FF" font-size="28" font-family="monospace">
-    YTFL
-  </text>
+      <!-- Medium petals -->
+      <use href="#petal2" x="350" y="20">
+        <animate attributeName="y" values="-20;240" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="350;370;330;360" dur="6s" repeatCount="indefinite"/>
+      </use>
+      <use href="#petal4" x="500" y="40">
+        <animate attributeName="y" values="-20;240" dur="5.5s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="500;520;480;510" dur="5.5s" repeatCount="indefinite"/>
+      </use>
 
-  <!-- Quote -->
-  <text x="50%" y="110" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.75">
-    Maybe...just maybe, the light can reach
-  </text>
-  <text x="50%" y="130" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.75">
-    even the bottom of a dark ocean.
-  </text>
+      <!-- Slow drifting petals -->
+      <use href="#petal1" x="650" y="15">
+        <animate attributeName="y" values="-20;240" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="650;680;620;660" dur="8s" repeatCount="indefinite"/>
+      </use>
+      <use href="#petal2" x="720" y="60">
+        <animate attributeName="y" values="-20;240" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="720;750;690;730" dur="7s" repeatCount="indefinite"/>
+      </use>
 
-</svg>
+      <!-- Extra density -->
+      <use href="#petal3" x="120" y="50">
+        <animate attributeName="y" values="-20;240" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="120;140;100;130" dur="5s" repeatCount="indefinite"/>
+      </use>
+      <use href="#petal4" x="420" y="10">
+        <animate attributeName="y" values="-20;240" dur="4.8s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="420;440;400;430" dur="4.8s" repeatCount="indefinite"/>
+      </use>
+    </g>
+
+    <!-- Username -->
+    <text x="50%" y="75" text-anchor="middle" fill="#58A6FF" font-size="28" font-family="monospace">
+      YTFL
+    </text>
+
+    <!-- Quote -->
+    <text x="50%" y="110" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.85">
+      Maybe...just maybe, the light can reach
+    </text>
+    <text x="50%" y="130" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.85">
+      even the bottom of a dark ocean.
+    </text>
+
+  </svg>
