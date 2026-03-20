@@ -16,24 +16,20 @@ jobs:
       - name: Generate snake
         uses: lowlighter/metrics@latest
         with:
-          filename: snake.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           user: YTFL
 
+          # REQUIRED core config
           base: ""
-          plugin_isocalendar: no
-          plugin_languages: no
-          plugin_followup: no
+          config_timezone: Asia/Kolkata
 
-          # Snake plugin
+          # OUTPUT CONFIG (CRITICAL)
+          filename: snake.svg
+          output_action: commit
+          committer_branch: snake-output
+
+          # SNAKE PLUGIN (fully specified)
           plugin_snake: yes
+          plugin_snake_animate: yes
           plugin_snake_section: contributions
           plugin_snake_color: github-dark
-
-      - name: Deploy to separate branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          publish_branch: snake-output
-          keep_files: false
