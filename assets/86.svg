@@ -117,4 +117,11 @@
 
   </text>
 
+  <!-- M1A4 Juggernaut - Direct link with lighten blend mode to remove background -->
+  <image href="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/Juggernaut_Doodle_I-IV.svg" 
+         x="540" y="50" 
+         width="250" height="180" 
+         preserveAspectRatio="xMidYMid meet"
+         style="mix-blend-mode: lighten; opacity: 0.9;" />
+
 </svg>
