@@ -29,4 +29,3 @@ Developer building practical software utilities that solve everyday problems thr
 
 ---
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=YTFL&theme=tokyo-night)
