@@ -11,7 +11,7 @@
 
 <!-- typing svg goes HERE -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=1F6FEB&center=true&vCenter=true&width=600&lines=Building+practical+software+tools;Developer+utilities+and+productivity+apps;Simple+solutions+to+real+problems" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=FF2E2E&center=true&vCenter=true&width=600&lines=Building+practical+software+tools;Developer+utilities+and+productivity+apps;Simple+solutions+to+real+problems" />
 </p>
 
 ![Repo Gallery](https://github.com/YTFL/YTFL/blob/output/gallery/repo-gallery.svg)
