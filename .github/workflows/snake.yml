@@ -19,18 +19,16 @@ jobs:
           github_user_name: YTFL
           github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=#1f6feb
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#1f6feb
 
-      # ✅ Copy files to regain ownership
-      - name: Prepare writable files
+      - name: Prepare writable copies
         run: |
           mkdir -p dist-fixed
           cp dist/github-contribution-grid-snake.svg dist-fixed/
           cp dist/github-contribution-grid-snake-dark.svg dist-fixed/
 
-      # ✅ Now we can modify safely
-      - name: Force refresh
+      - name: Force refresh (avoid caching issues)
         run: |
           echo "<!-- $(date) -->" >> dist-fixed/github-contribution-grid-snake.svg
           echo "<!-- $(date) -->" >> dist-fixed/github-contribution-grid-snake-dark.svg
