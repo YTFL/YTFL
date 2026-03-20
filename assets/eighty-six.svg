@@ -1,0 +1,71 @@
+<svg width="100%" height="240" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="800" height="240" fill="#0d1117"/>
+
+  <!-- Ground -->
+  <rect y="160" width="800" height="80" fill="#0a0f14"/>
+
+  <!-- Undertaker Image (bottom-left) -->
+  <image href="undertaker.png"
+         x="60"
+         y="100"
+         width="130"
+         height="130"
+         opacity="0.85" />
+
+  <!-- Spider Lily (bottom-left corner, deeper) -->
+  <g transform="translate(40,180)" stroke="#ff2e2e" stroke-width="1.3" fill="none" opacity="0.9">
+
+    <path d="M0 -25 C 12 -45, 28 -45, 18 -10"/>
+    <path d="M0 -25 C -12 -45, -28 -45, -18 -10"/>
+    <path d="M0 -25 C 22 -30, 32 -12, 12 -6"/>
+    <path d="M0 -25 C -22 -30, -32 -12, -12 -6"/>
+    <path d="M0 -25 C 15 -5, 28 12, 6 6"/>
+    <path d="M0 -25 C -15 -5, -28 12, -6 6"/>
+
+    <line x1="0" y1="-25" x2="0" y2="15" stroke="#8b949e"/>
+
+  </g>
+
+  <!-- Title -->
+  <text x="50%" y="40" text-anchor="middle"
+        fill="#ff2e2e"
+        font-size="20"
+        font-family="monospace"
+        opacity="0.9">
+    PROJECTS
+  </text>
+
+  <!-- Divider -->
+  <line x1="250" y1="55" x2="550" y2="55"
+        stroke="#30363d" stroke-width="1"/>
+
+  <!-- Quote -->
+  <text x="50%" y="90" text-anchor="middle"
+        fill="#f0f6fc"
+        font-size="14"
+        font-family="monospace"
+        opacity="0.75">
+
+    <tspan x="50%" dy="0">
+      Giving up because you know a dream can never come true
+    </tspan>
+    <tspan x="50%" dy="18">
+      and simply waiting for fate to claim you...
+    </tspan>
+
+    <tspan x="50%" dy="22">
+      Or fighting against fate and crying out against the dying light,
+    </tspan>
+    <tspan x="50%" dy="18">
+      even knowing that dream will never be realized.
+    </tspan>
+
+    <tspan x="50%" dy="22" fill="#ff2e2e" opacity="0.9">
+      Those are decidedly different things.
+    </tspan>
+
+  </text>
+
+</svg>
