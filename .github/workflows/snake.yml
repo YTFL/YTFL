@@ -22,18 +22,23 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Fix permissions
-        run: chmod -R 777 dist
-
-      - name: Force refresh (avoid stale cache)
+      # ✅ Copy files to regain ownership
+      - name: Prepare writable files
         run: |
-          echo "<!-- $(date) -->" >> dist/github-contribution-grid-snake.svg
-          echo "<!-- $(date) -->" >> dist/github-contribution-grid-snake-dark.svg
+          mkdir -p dist-fixed
+          cp dist/github-contribution-grid-snake.svg dist-fixed/
+          cp dist/github-contribution-grid-snake-dark.svg dist-fixed/
+
+      # ✅ Now we can modify safely
+      - name: Force refresh
+        run: |
+          echo "<!-- $(date) -->" >> dist-fixed/github-contribution-grid-snake.svg
+          echo "<!-- $(date) -->" >> dist-fixed/github-contribution-grid-snake-dark.svg
 
       - name: Deploy to snake-output branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          publish_dir: dist-fixed
           publish_branch: snake-output
           keep_files: false
