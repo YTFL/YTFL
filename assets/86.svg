@@ -3,18 +3,78 @@
   <!-- Background -->
   <rect width="800" height="240" fill="#0d1117"/>
   
-  <!-- Spider Lily (bottom-left corner) -->
-  <g transform="translate(40,180)" stroke="#ff2e2e" stroke-width="1.3" fill="none" opacity="0.9">
+  <defs>
+    <!-- Define a single realistic Spider Lily floret -->
+    <g id="floret">
+      <!-- Pedicel (tiny stem connecting to main center) -->
+      <path d="M 0,0 C -2,-5 -2,-10 0,-15" stroke="#8b949e" stroke-width="1.2" fill="none"/>
+      
+      <!-- Ovary / Flower Base -->
+      <circle cx="0" cy="-15" r="1.5" fill="#8b949e"/>
 
-    <path d="M0 -25 C 12 -45, 28 -45, 18 -10"/>
-    <path d="M0 -25 C -12 -45, -28 -45, -18 -10"/>
-    <path d="M0 -25 C 22 -30, 32 -12, 12 -6"/>
-    <path d="M0 -25 C -22 -30, -32 -12, -12 -6"/>
-    <path d="M0 -25 C 15 -5, 28 12, 6 6"/>
-    <path d="M0 -25 C -15 -5, -28 12, -6 6"/>
+      <!-- Petals (Deeply recurved and crinkly) -->
+      <g stroke="#ff2e2e" stroke-width="1.4" fill="none">
+        <!-- Inner crinkled petals sweeping backward -->
+        <path d="M 0,-15 C -12,-30 -22,-15 -10,-5 C -2,2 -15,15 -5,22" />
+        <path d="M 0,-15 C 12,-30 22,-15 10,-5 C 2,2 15,15 5,22" />
+        
+        <!-- Outer spreading petals -->
+        <path d="M 0,-15 C -25,-25 -30,-5 -15,2 C -5,7 -20,20 -10,25" />
+        <path d="M 0,-15 C 25,-25 30,-5 15,2 C 5,7 20,20 10,25" />
+        
+        <!-- Central drooping petal -->
+        <path d="M 0,-15 C -5,-5 0,5 -5,12 C -10,18 5,25 0,30" opacity="0.8"/>
+      </g>
 
-    <line x1="0" y1="-25" x2="0" y2="15" stroke="#8b949e"/>
+      <!-- Stamens (Extremely long, sweeping arcs curving upwards) -->
+      <g stroke="#ff2e2e" stroke-width="0.7" fill="none" opacity="0.85">
+        <path d="M 0,-15 C -10,-40 -20,-70 -8,-95" />
+        <path d="M 0,-15 C 10,-40 20,-70 8,-95" />
+        <path d="M 0,-15 C -25,-35 -40,-60 -25,-85" />
+        <path d="M 0,-15 C 25,-35 40,-60 25,-85" />
+        <path d="M 0,-15 C -40,-30 -55,-50 -40,-70" />
+        <path d="M 0,-15 C 40,-30 55,-50 40,-70" />
+      </g>
+      
+      <!-- Pistil (Single central style, slightly longer and darker) -->
+      <path d="M 0,-15 C 0,-50 -5,-80 0,-105" stroke="#ff1a1a" stroke-width="0.9" fill="none"/>
 
+      <!-- Anthers (Tiny tips on the stamens/pistil) -->
+      <g fill="#ff7373">
+        <ellipse cx="-8" cy="-95" rx="1" ry="2" transform="rotate(15, -8, -95)"/>
+        <ellipse cx="8" cy="-95" rx="1" ry="2" transform="rotate(-15, 8, -95)"/>
+        <ellipse cx="-25" cy="-85" rx="1" ry="2" transform="rotate(30, -25, -85)"/>
+        <ellipse cx="25" cy="-85" rx="1" ry="2" transform="rotate(-30, 25, -85)"/>
+        <ellipse cx="-40" cy="-70" rx="1" ry="2" transform="rotate(45, -40, -70)"/>
+        <ellipse cx="40" cy="-70" rx="1" ry="2" transform="rotate(-45, 40, -70)"/>
+        <!-- Stigma (Tip of the pistil) -->
+        <circle cx="0" cy="-105" r="1.2" fill="#ff1a1a"/>
+      </g>
+    </g>
+  </defs>
+
+  <!-- Assembled Spider Lily Umbel -->
+  <g transform="translate(50, 220) scale(0.8) rotate(35)" opacity="0.95">
+    
+    <!-- Main stem -->
+    <path d="M 0,-30 C -2,10 3,40 0,80" stroke="#8b949e" stroke-width="2" fill="none"/>
+    
+    <!-- Bracts (papery sheath at the base of the umbel) -->
+    <path d="M -5,-15 C -6,-25 -2,-30 0,-30 C 2,-30 6,-25 5,-15 Z" fill="#8b949e" opacity="0.6"/>
+    <path d="M -2,-18 C -3,-35 0,-40 0,-30 Z" fill="#8b949e" opacity="0.4"/>
+
+    <!-- Background / Side Florets (Smaller, lower opacity for depth) -->
+    <use href="#floret" transform="translate(0, -30) rotate(-95) scale(0.85)" opacity="0.75"/>
+    <use href="#floret" transform="translate(0, -30) rotate(95) scale(0.85)" opacity="0.75"/>
+    
+    <!-- Mid Florets -->
+    <use href="#floret" transform="translate(0, -30) rotate(-55) scale(0.95)" opacity="0.9"/>
+    <use href="#floret" transform="translate(0, -30) rotate(55) scale(0.95)" opacity="0.9"/>
+    
+    <!-- Front / Center Florets (Largest, fully opaque, overlapping others) -->
+    <use href="#floret" transform="translate(0, -30) rotate(-15) scale(1.05)" opacity="1"/>
+    <use href="#floret" transform="translate(0, -30) rotate(25) scale(1.0)" opacity="1"/>
+    
   </g>
 
   <!-- Title -->
