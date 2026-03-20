@@ -24,5 +24,5 @@ Developer building practical software utilities that solve everyday problems thr
 </p>
 
 ---
-
+![snake](https://raw.githubusercontent.com/YTFL/YTFL/snake-output/github-contribution-grid-snake.svg)
 ![snake dark](https://raw.githubusercontent.com/YTFL/YTFL/snake-output/github-contribution-grid-snake-dark.svg)
