@@ -1,0 +1,39 @@
+name: Generate Snake (Alt)
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate snake
+        uses: lowlighter/metrics@latest
+        with:
+          filename: snake.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: YTFL
+
+          base: ""
+          plugin_isocalendar: no
+          plugin_languages: no
+          plugin_followup: no
+
+          # Snake plugin
+          plugin_snake: yes
+          plugin_snake_section: contributions
+          plugin_snake_color: github-dark
+
+      - name: Deploy to separate branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: snake-output
+          keep_files: false
