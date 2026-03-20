@@ -3,36 +3,98 @@
   <!-- Background -->
   <rect width="800" height="220" fill="#0d1117"/>
 
-  <!-- Piano keys -->
+  <!-- Piano white keys -->
   <rect y="180" width="800" height="40" fill="#ffffff"/>
-  
-  <!-- Black keys -->
-  <rect x="60" y="180" width="20" height="25" fill="#000"/>
-  <rect x="120" y="180" width="20" height="25" fill="#000"/>
-  <rect x="200" y="180" width="20" height="25" fill="#000"/>
-  <rect x="260" y="180" width="20" height="25" fill="#000"/>
-  <rect x="320" y="180" width="20" height="25" fill="#000"/>
-  <rect x="400" y="180" width="20" height="25" fill="#000"/>
-  <rect x="460" y="180" width="20" height="25" fill="#000"/>
-  <rect x="540" y="180" width="20" height="25" fill="#000"/>
-  <rect x="600" y="180" width="20" height="25" fill="#000"/>
 
-  <!-- Sakura petals -->
-  <circle cx="200" cy="60" r="3" fill="#f778ba">
-    <animate attributeName="cy" values="60;200" dur="6s" repeatCount="indefinite"/>
-  </circle>
+  <!-- Black keys pattern (correct repeating structure) -->
+  <g fill="#000">
+    <!-- Pattern repeats every 140px -->
+    
+    <!-- Group 1 -->
+    <rect x="40"  y="180" width="16" height="25"/>
+    <rect x="80"  y="180" width="16" height="25"/>
 
-  <circle cx="400" cy="40" r="3" fill="#f778ba">
-    <animate attributeName="cy" values="40;200" dur="5s" repeatCount="indefinite"/>
-  </circle>
+    <!-- Group 2 -->
+    <rect x="140" y="180" width="16" height="25"/>
+    <rect x="180" y="180" width="16" height="25"/>
+    <rect x="220" y="180" width="16" height="25"/>
 
-  <circle cx="600" cy="80" r="3" fill="#f778ba">
-    <animate attributeName="cy" values="80;200" dur="7s" repeatCount="indefinite"/>
-  </circle>
+    <!-- Repeat -->
+    <rect x="280" y="180" width="16" height="25"/>
+    <rect x="320" y="180" width="16" height="25"/>
 
-  <!-- Name (subtle, not dominant) -->
-  <text x="50%" y="100" text-anchor="middle" fill="#58A6FF" font-size="28" font-family="monospace" opacity="0.8">
+    <rect x="380" y="180" width="16" height="25"/>
+    <rect x="420" y="180" width="16" height="25"/>
+    <rect x="460" y="180" width="16" height="25"/>
+
+    <rect x="520" y="180" width="16" height="25"/>
+    <rect x="560" y="180" width="16" height="25"/>
+
+    <rect x="620" y="180" width="16" height="25"/>
+    <rect x="660" y="180" width="16" height="25"/>
+    <rect x="700" y="180" width="16" height="25"/>
+  </g>
+
+  <!-- Sakura petals (more + varied speed + drift) -->
+  <g fill="#f778ba" opacity="0.9">
+
+    <!-- Fast small petals -->
+    <circle cx="80" cy="10" r="2.5">
+      <animate attributeName="cy" values="10;200" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="80;100;70;90" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="200" cy="30" r="2.5">
+      <animate attributeName="cy" values="30;200" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="200;220;180;210" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Medium petals -->
+    <circle cx="350" cy="20" r="3">
+      <animate attributeName="cy" values="20;200" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="350;370;330;360" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="500" cy="40" r="3">
+      <animate attributeName="cy" values="40;200" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="500;520;480;510" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Slow drifting petals -->
+    <circle cx="650" cy="15" r="3.5">
+      <animate attributeName="cy" values="15;200" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="650;680;620;660" dur="8s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="720" cy="60" r="3.5">
+      <animate attributeName="cy" values="60;200" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="720;750;690;730" dur="7s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Extra density -->
+    <circle cx="120" cy="50" r="2">
+      <animate attributeName="cy" values="50;200" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="120;140;100;130" dur="5s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="420" cy="10" r="2">
+      <animate attributeName="cy" values="10;200" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="420;440;400;430" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+  <!-- Username -->
+  <text x="50%" y="75" text-anchor="middle" fill="#58A6FF" font-size="28" font-family="monospace">
     YTFL
+  </text>
+
+  <!-- Quote -->
+  <text x="50%" y="110" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.75">
+    Maybe...just maybe, the light can reach
+  </text>
+  <text x="50%" y="130" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.75">
+    even the bottom of a dark ocean.
   </text>
 
 </svg>
