@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia-banner.svg" />
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia.svg" />
 </p>
 
 Developer building practical software utilities that solve everyday problems through simple, focused applications.
