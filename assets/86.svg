@@ -1,5 +1,8 @@
 <svg width="100%" height="240" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
 
+  <!-- Background -->
+  <rect width="800" height="240" fill="#0d1117"/>
+  
   <!-- Spider Lily (bottom-left corner) -->
   <g transform="translate(40,180)" stroke="#ff2e2e" stroke-width="1.3" fill="none" opacity="0.9">
 
