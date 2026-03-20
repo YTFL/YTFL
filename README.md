@@ -6,21 +6,18 @@
   <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/86.svg" />
 </p>
 
-<br>
 
 <!-- typing svg -->
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=20&duration=3500&color=FF2E2E&center=true&vCenter=true&width=600&lines=building+things+that+should+exist;tools+for+real+problems;quietly+shipping+solutions" />
 </p>
 
-<br>
 
 <!-- repo gallery -->
 <p align="center">
   <img src="https://github.com/YTFL/YTFL/blob/output/gallery/repo-gallery.svg" />
 </p>
 
-<br>
 
 <!-- activity graph -->
 <p align="center">
