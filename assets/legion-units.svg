@@ -1,116 +1,126 @@
-<svg width="840" height="360" viewBox="0 0 840 360" xmlns="http://www.w3.org/2000/svg">
+<svg width="840" height="380" viewBox="0 0 840 380" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
-    <!-- Background -->
-    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#0d1117"/>
-    </radialGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.02"/>
+      </feComponentTransfer>
+    </filter>
 
-    <!-- Holographic glow -->
     <filter id="holoGlow">
       <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#7df9ff"/>
     </filter>
 
-    <!-- Scanlines -->
-    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="1" fill="#7df9ff08"/>
-    </pattern>
-
-    <!-- Noise -->
-    <filter id="noise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2"/>
-      <feComponentTransfer>
-        <feFuncA type="table" tableValues="0 0.03"/>
-      </feComponentTransfer>
+    <filter id="redGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#ff3b3b"/>
     </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="#0d1117"/>
   <rect width="100%" height="100%" filter="url(#noise)"/>
-  <rect width="100%" height="100%" fill="url(#scan)"/>
-
-  <!-- Grid -->
-  <g stroke="#7df9ff12" stroke-width="1">
-    <line x1="0" y1="120" x2="840" y2="120"/>
-    <line x1="0" y1="240" x2="840" y2="240"/>
-    <line x1="210" y1="0" x2="210" y2="360"/>
-    <line x1="420" y1="0" x2="420" y2="360"/>
-    <line x1="630" y1="0" x2="630" y2="360"/>
-  </g>
 
   <style>
     text {
       font-family: monospace;
       text-anchor: middle;
+      fill: #e6edf3;
       letter-spacing: 1px;
-      fill: #bffcff;
     }
-    .id { font-size: 10px; opacity: 0.6; }
-    .name { font-size: 15px; fill: #eaffff; }
-    .class { font-size: 11px; opacity: 0.75; }
+    .small { font-size: 10px; opacity: 0.6; }
+    .name { font-size: 15px; }
+    .desc { font-size: 11px; opacity: 0.75; }
   </style>
 
-  <!-- UNIT 01 -->
-  <a href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker">
-    <circle cx="140" cy="110" r="42" stroke="#7df9ff40" fill="none"/>
-    <circle cx="140" cy="110" r="20" stroke="#7df9ff80" fill="none" stroke-dasharray="4 6"/>
-    <circle cx="140" cy="110" r="3" fill="#7df9ff" filter="url(#holoGlow)"/>
+  <!-- HEADER -->
+  <text x="420" y="30">YTFL / LEGION DESIGNATION SYSTEM</text>
+  <text x="420" y="50" class="small">AUTONOMOUS NETWORK — ACTIVE</text>
 
-    <text x="140" y="180" class="id">UNIT-01 / TRACK</text>
-    <text x="140" y="200" class="name">ATTENDMATE</text>
-    <text x="140" y="218" class="class">attendance state computation</text>
-  </a>
+  <!-- ===== GRAUWOLF ===== -->
+  <g>
+    <!-- legs -->
+    <g stroke="#7df9ff50">
+      <line x1="140" y1="120" x2="110" y2="90"/>
+      <line x1="140" y1="120" x2="170" y2="90"/>
+      <line x1="140" y1="120" x2="110" y2="150"/>
+      <line x1="140" y1="120" x2="170" y2="150"/>
+    </g>
 
-  <!-- UNIT 02 -->
-  <a href="https://github.com/YTFL/HonZuki-BookTracker">
-    <circle cx="350" cy="90" r="40" stroke="#7df9ff40" fill="none"/>
-    <line x1="330" y1="80" x2="370" y2="80" stroke="#7df9ff80"/>
-    <line x1="330" y1="90" x2="370" y2="90" stroke="#7df9ff80"/>
-    <line x1="330" y1="100" x2="370" y2="100" stroke="#7df9ff80"/>
-    <circle cx="350" cy="90" r="2" fill="#7df9ff" filter="url(#holoGlow)"/>
+    <!-- body -->
+    <circle cx="140" cy="120" r="10" fill="#7df9ff" filter="url(#holoGlow)">
+      <animate attributeName="r" values="10;12;10" dur="4s" repeatCount="indefinite"/>
+    </circle>
 
-    <text x="350" y="160" class="id">UNIT-02 / ARCHIVE</text>
-    <text x="350" y="180" class="name">HONZUKI</text>
-    <text x="350" y="198" class="class">reading progression indexing</text>
-  </a>
+    <text x="140" y="185" class="small">GRAUWOLF / CONTROL UNIT</text>
+    <text x="140" y="205" class="name">ATTENDMATE</text>
+    <text x="140" y="223" class="desc">attendance state computation</text>
+  </g>
 
-  <!-- UNIT 03 -->
-  <a href="https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter">
-    <circle cx="560" cy="110" r="38" stroke="#7df9ff40" fill="none"/>
-    <rect x="545" y="95" width="15" height="30" fill="#7df9ff80"/>
-    <rect x="560" y="95" width="15" height="30" fill="none" stroke="#7df9ff80"/>
-    <circle cx="560" cy="110" r="2" fill="#7df9ff" filter="url(#holoGlow)"/>
+  <!-- ===== AMEISE ===== -->
+  <g>
+    <g fill="#7df9ff">
+      <circle cx="340" cy="95" r="2"/>
+      <circle cx="350" cy="100" r="2"/>
+      <circle cx="360" cy="95" r="2"/>
+      <circle cx="345" cy="110" r="2"/>
+      <circle cx="355" cy="110" r="2"/>
+    </g>
 
-    <text x="560" y="180" class="id">UNIT-03 / TRANSFORM</text>
-    <text x="560" y="200" class="name">PDFARK</text>
-    <text x="560" y="218" class="class">document luminance inversion</text>
-  </a>
+    <!-- slow drift -->
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;1 -1;0 0;-1 1;0 0" dur="3s" repeatCount="indefinite"/>
 
-  <!-- UNIT 04 -->
-  <a href="https://github.com/YTFL/SimpliMap-K-map-Simplifier">
-    <circle cx="730" cy="95" r="41" stroke="#7df9ff40" fill="none"/>
-    <rect x="710" y="75" width="40" height="40" fill="none" stroke="#7df9ff80"/>
-    <line x1="710" y1="95" x2="750" y2="95" stroke="#7df9ff80"/>
-    <line x1="730" y1="75" x2="730" y2="115" stroke="#7df9ff80"/>
-    <circle cx="730" cy="95" r="2" fill="#7df9ff" filter="url(#holoGlow)"/>
+    <text x="350" y="165" class="small">AMEISE / ARCHIVE UNIT</text>
+    <text x="350" y="185" class="name">HONZUKI</text>
+    <text x="350" y="203" class="desc">reading progression indexing</text>
+  </g>
 
-    <text x="730" y="165" class="id">UNIT-04 / LOGIC</text>
-    <text x="730" y="185" class="name">SIMPLIMAP</text>
-    <text x="730" y="203" class="class">boolean minimization engine</text>
-  </a>
+  <!-- ===== EINTAGSFLIEGE ===== -->
+  <g>
+    <g fill="#7df9ff">
+      <rect x="550" y="110" width="6" height="10">
+        <animate attributeName="y" values="110;104;110" dur="1.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="560" y="115" width="6" height="10">
+        <animate attributeName="y" values="115;108;115" dur="1.8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="570" y="110" width="6" height="10">
+        <animate attributeName="y" values="110;104;110" dur="1.6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
 
-  <!-- Core -->
-  <circle cx="420" cy="270" r="50" stroke="#7df9ff20" fill="none"/>
-  <circle cx="420" cy="270" r="4" fill="#7df9ff" filter="url(#holoGlow)"/>
+    <text x="560" y="185" class="small">EINTAGSFLIEGE / OPTICAL UNIT</text>
+    <text x="560" y="205" class="name">PDFARK</text>
+    <text x="560" y="223" class="desc">document luminance inversion</text>
+  </g>
 
-  <!-- Connections -->
-  <g stroke="#7df9ff20">
-    <line x1="140" y1="110" x2="420" y2="270"/>
-    <line x1="350" y1="90" x2="420" y2="270"/>
-    <line x1="560" y1="110" x2="420" y2="270"/>
-    <line x1="730" y1="95" x2="420" y2="270"/>
+  <!-- ===== LÖWE ===== -->
+  <g>
+    <rect x="710" y="95" width="40" height="20" fill="none" stroke="#7df9ff80"/>
+
+    <line x1="710" y1="105" x2="750" y2="105" stroke="#7df9ff80"/>
+
+    <circle cx="730" cy="105" r="5" fill="#7df9ff">
+      <animate attributeName="r" values="5;6;5" dur="5s" repeatCount="indefinite"/>
+    </circle>
+
+    <text x="730" y="170" class="small">LÖWE / LOGIC UNIT</text>
+    <text x="730" y="190" class="name">SIMPLIMAP</text>
+    <text x="730" y="208" class="desc">boolean minimization engine</text>
+  </g>
+
+  <!-- ===== CORE ===== -->
+  <g>
+    <circle cx="420" cy="290" r="20" stroke="#ff3b3b55" fill="none"/>
+
+    <circle cx="420" cy="290" r="6" fill="#ff3b3b" filter="url(#redGlow)">
+      <animate attributeName="r" values="6;8;6" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <text x="420" y="340" fill="#ff3b3b80" font-size="10">
+      YTFL CORE / CONTROL SYSTEM
+    </text>
   </g>
 
 </svg>
