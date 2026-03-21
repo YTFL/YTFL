@@ -15,7 +15,7 @@
 
 <!-- repo gallery -->
 <p align="center">
-  <img src="https://github.com/YTFL/YTFL/blob/output/gallery/repo-gallery.svg" />
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/legion.svg" width="800"/>
 </p>
 
 
