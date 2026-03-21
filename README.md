@@ -28,7 +28,7 @@
 
 <!-- snake -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/snake-output/snake.svg" width="1000"/>
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/snake-output/snak.svg" width="1000"/>
 </p>
 
 <br>
