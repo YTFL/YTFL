@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia.svg" width="1000" />
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia-banner.svg" width="1000" />
 </p>
 
 <p align="center">
