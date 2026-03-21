@@ -1,11 +1,16 @@
-  <svg width="100%" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- Definitions for Realistic Sakura Petals -->
+    <!-- Definitions -->
     <defs>
-        <!-- The core petal shape with a cleft -->
+        <!-- Soft Glow for Musical Notes -->
+        <filter id="note-glow">
+            <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#58a6ff"/>
+        </filter>
+
+        <!-- Realistic Sakura Petal Shape -->
         <path id="petal-shape" d="M 0,0 C -4,-6 -6,-10 -2,-13 Q 0,-11 2,-13 C 6,-10 4,-6 0,0 Z" />
         
-        <!-- Tumbling slowly clockwise -->
+        <!-- Petal Varieties -->
         <g id="petal1">
           <g transform="scale(0.8)">
             <use href="#petal-shape" fill="#f778ba" opacity="0.9">
@@ -14,7 +19,6 @@
           </g>
         </g>
         
-        <!-- Tumbling counter-clockwise, slightly larger, lighter pink -->
         <g id="petal2">
           <g transform="scale(1)">
             <use href="#petal-shape" fill="#fbb1d9" opacity="0.85">
@@ -23,7 +27,6 @@
           </g>
         </g>
         
-        <!-- Tumbling fast clockwise, darker pink, smaller -->
         <g id="petal3">
           <g transform="scale(0.6)">
             <use href="#petal-shape" fill="#ff8dc7" opacity="0.95">
@@ -32,7 +35,6 @@
           </g>
         </g>
 
-        <!-- Tumbling slowly counter-clockwise, very light pink -->
         <g id="petal4">
           <g transform="scale(0.9)">
             <use href="#petal-shape" fill="#ffe0f0" opacity="0.8">
@@ -41,7 +43,7 @@
           </g>
         </g>
 
-        <!-- Realistic Piano Key Gradients -->
+        <!-- Piano Key Gradients -->
         <linearGradient id="white-key" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" stop-color="#f3f4f6" />
           <stop offset="100%" stop-color="#ffffff" />
@@ -59,18 +61,11 @@
           <stop offset="100%" stop-color="rgba(0,0,0,0)" />
         </linearGradient>
 
-        <!-- Piano Octave Pattern (168px wide = 7 white keys @ 24px each) -->
+        <!-- Piano Octave Pattern -->
         <pattern id="octave" width="168" height="50" patternUnits="userSpaceOnUse">
-          <!-- White keys background -->
           <rect x="0" y="0" width="168" height="50" fill="url(#white-key)" />
-          
-          <!-- White key separators -->
           <path d="M 24 0 L 24 50 M 48 0 L 48 50 M 72 0 L 72 50 M 96 0 L 96 50 M 120 0 L 120 50 M 144 0 L 144 50" stroke="#d1d5db" stroke-width="1.5" />
-          
-          <!-- White key front edge highlighting (3D effect) -->
           <path d="M 0 49.5 L 168 49.5" stroke="#fff" stroke-width="1" />
-          
-          <!-- Shadow for black keys -->
           <g fill="rgba(0,0,0,0.25)">
               <rect x="17" y="0" width="14" height="33" rx="1.5" />
               <rect x="41" y="0" width="14" height="33" rx="1.5" />
@@ -78,87 +73,136 @@
               <rect x="113" y="0" width="14" height="33" rx="1.5" />
               <rect x="137" y="0" width="14" height="33" rx="1.5" />
           </g>
-          
-          <!-- Black keys main bodies -->
           <rect x="15" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
           <rect x="39" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
           <rect x="87" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
           <rect x="111" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
           <rect x="135" y="0" width="14" height="32" fill="url(#black-key)" rx="1.5" ry="1.5" />
-          
-          <!-- Black keys top ridge highlight (makes it look 3D and rounded) -->
-          <rect x="16.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
-          <rect x="40.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
-          <rect x="88.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
-          <rect x="112.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
-          <rect x="136.5" y="0" width="11" height="30" fill="none" stroke="#555" stroke-width="0.5" rx="1" />
         </pattern>
     </defs>
 
     <!-- Background -->
     <rect width="800" height="220" fill="#0d1117"/>
 
+    <!-- Musical Staff Layer -->
+    <g transform="translate(0, 5)">
+      <g stroke="#58a6ff15" stroke-width="1">
+        <line x1="0" y1="60" x2="800" y2="60"/>
+        <line x1="0" y1="75" x2="800" y2="75"/>
+        <line x1="0" y1="90" x2="800" y2="90"/>
+        <line x1="0" y1="105" x2="800" y2="105"/> <!-- G line -->
+        <line x1="0" y1="120" x2="800" y2="120"/>
+      </g>
+
+      <!-- EXACT Treble Clef SVG Data -->
+      <path d="m51.688 5.25c-5.427-0.1409-11.774 12.818-11.563 24.375 0.049 3.52 1.16 10.659 2.781 19.625-10.223 10.581-22.094 21.44-22.094 35.688-0.163 13.057 7.817 29.692 26.75 29.532 2.906-0.02 5.521-0.38 7.844-1 1.731 9.49 2.882 16.98 2.875 20.44 0.061 13.64-17.86 14.99-18.719 7.15 3.777-0.13 6.782-3.13 6.782-6.84 0-3.79-3.138-6.88-7.032-6.88-2.141 0-4.049 0.94-5.343 2.41-0.03 0.03-0.065 0.06-0.094 0.09-0.292 0.31-0.538 0.68-0.781 1.1-0.798 1.35-1.316 3.29-1.344 6.06 0 11.42 28.875 18.77 28.875-3.75 0.045-3.03-1.258-10.72-3.156-20.41 20.603-7.45 15.427-38.04-3.531-38.184-1.47 0.015-2.887 0.186-4.25 0.532-1.08-5.197-2.122-10.241-3.032-14.876 7.199-7.071 13.485-16.224 13.344-33.093 0.022-12.114-4.014-21.828-8.312-21.969zm1.281 11.719c2.456-0.237 4.406 2.043 4.406 7.062 0.199 8.62-5.84 16.148-13.031 23.719-0.688-4.147-1.139-7.507-1.188-9.5 0.204-13.466 5.719-20.886 9.813-21.281zm-7.719 44.687c0.877 4.515 1.824 9.272 2.781 14.063-12.548 4.464-18.57 21.954-0.781 29.781-10.843-9.231-5.506-20.158 2.312-22.062 1.966 9.816 3.886 19.502 5.438 27.872-2.107 0.74-4.566 1.17-7.438 1.19-7.181 0-21.531-4.57-21.531-21.875 0-14.494 10.047-20.384 19.219-28.969zm6.094 21.469c0.313-0.019 0.652-0.011 0.968 0 13.063 0 17.99 20.745 4.688 27.375-1.655-8.32-3.662-17.86-5.656-27.375z" 
+            fill="#58a6ff35" transform="translate(15, 28) scale(0.85)"/>
+
+      <!-- Hikaru Nara Main Melody Line (Melody-only extraction) -->
+      <g filter="url(#note-glow)" fill="#58a6ff" opacity="0.8">
+        <!-- Phrase 1: "Kimi da yo" -->
+        <g transform="translate(100, 0)">
+          <circle cx="0" cy="105" r="3.5"/> <rect x="3" y="75" width="1" height="30"/>
+          <circle cx="22" cy="97.5" r="3.5"/> <rect x="25" y="67.5" width="1" height="30"/>
+          <circle cx="44" cy="90" r="3.5"/> <rect x="47" y="60" width="1" height="30"/>
+          <circle cx="66" cy="75" r="3.5"/> <rect x="62.5" y="75" width="1" height="30"/>
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="8s" repeatCount="indefinite"/>
+        </g>
+
+        <!-- Phrase 2: "Kimi nan da yo" -->
+        <g transform="translate(195, 0)">
+          <circle cx="0" cy="82.5" r="3.5"/> <rect x="-3" y="82.5" width="1" height="30"/>
+          <circle cx="22" cy="90" r="3.5"/> <rect x="25" y="60" width="1" height="30"/>
+          <circle cx="44" cy="97.5" r="3.5"/> <rect x="47" y="67.5" width="1" height="30"/>
+          <circle cx="66" cy="105" r="3.5"/> <rect x="69" y="75" width="1" height="30"/>
+          <circle cx="88" cy="105" r="3.5"/> <rect x="91" y="75" width="1" height="30"/>
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="8s" begin="1s" repeatCount="indefinite"/>
+        </g>
+
+        <!-- Phrase 3: "Oshiete kureta" -->
+        <g transform="translate(310, 0)">
+          <circle cx="0" cy="105" r="3.5"/> <rect x="3" y="75" width="1" height="30"/>
+          <circle cx="20" cy="97.5" r="3.5"/> <rect x="23" y="67.5" width="1" height="30"/>
+          <circle cx="40" cy="90" r="3.5"/> <rect x="43" y="60" width="1" height="30"/>
+          <circle cx="65" cy="75" r="3.5"/> <rect x="61.5" y="75" width="1" height="30"/>
+          <circle cx="85" cy="90" r="3.5"/> <rect x="88.5" y="60" width="1" height="30"/>
+          <circle cx="105" cy="97.5" r="3.5"/> <rect x="108.5" y="67.5" width="1" height="30"/>
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="8s" begin="2s" repeatCount="indefinite"/>
+        </g>
+
+        <!-- Phrase 4: "Kurayami mo hikaru nara" -->
+        <g transform="translate(450, 0)">
+          <circle cx="0" cy="105" r="3.5"/> <rect x="3" y="75" width="1" height="30"/>
+          <circle cx="18" cy="97.5" r="3.5"/> <rect x="21" y="67.5" width="1" height="30"/>
+          <circle cx="36" cy="90" r="3.5"/> <rect x="39" y="60" width="1" height="30"/>
+          <circle cx="54" cy="75" r="3.5"/> <rect x="50.5" y="75" width="1" height="30"/>
+          <circle cx="72" cy="90" r="3.5"/> <rect x="75" y="60" width="1" height="30"/>
+          <circle cx="90" cy="97.5" r="3.5"/> <rect x="93" y="67.5" width="1" height="30"/>
+          <circle cx="108" cy="105" r="3.5"/> <rect x="111" y="75" width="1" height="30"/>
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="8s" begin="3s" repeatCount="indefinite"/>
+        </g>
+
+        <!-- Phrase 5: "Hoshizora ni naru" -->
+        <g transform="translate(590, 0)">
+          <circle cx="0" cy="105" r="3.5"/> <rect x="3" y="75" width="1" height="30"/>
+          <circle cx="20" cy="97.5" r="3.5"/> <rect x="23" y="67.5" width="1" height="30"/>
+          <circle cx="40" cy="90" r="3.5"/> <rect x="43" y="60" width="1" height="30"/>
+          <circle cx="65" cy="75" r="3.5"/> <rect x="61.5" y="75" width="1" height="30"/>
+          <circle cx="85" cy="90" r="3.5"/> <rect x="88.5" y="60" width="1" height="30"/>
+          <circle cx="105" cy="97.5" r="3.5"/> <rect x="108.5" y="67.5" width="1" height="30"/>
+          <circle cx="125" cy="105" r="3.5"/> <rect x="128.5" y="75" width="1" height="30"/>
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="8s" begin="4s" repeatCount="indefinite"/>
+        </g>
+      </g>
+    </g>
+
     <!-- Piano Keys Section -->
     <g transform="translate(0, 170)">
-      <!-- The repeating octave pattern -->
       <rect width="800" height="50" fill="url(#octave)" />
-      
-      <!-- Ambient shadow cast by the fallboard onto the keys -->
       <rect x="0" y="0" width="800" height="8" fill="url(#key-shadow)" />
     </g>
 
-    <!-- Kaori's Violin (Ghostly/Line-art style memory) -->
-    <g transform="translate(620, 20)">
-        <!-- Gentle floating animation for the violin -->
-        <animateTransform attributeName="transform" type="translate" values="620,20; 620,12; 620,20" dur="6s" repeatCount="indefinite"/>
-        
+    <!-- Kaori's Violin (Safe position on the far right) -->
+    <g transform="translate(710, 20)">
+        <animateTransform attributeName="transform" type="translate" values="710,20; 710,12; 710,20" dur="6s" repeatCount="indefinite"/>
         <g transform="rotate(22, 50, 100) scale(1.1)" fill="none" stroke="#f0f6fc" stroke-linecap="round" stroke-linejoin="round">
-            
-            <!-- Pink/Sakura Glow Layer -->
             <g stroke="#f778ba" stroke-width="6" opacity="0.15">
                 <path d="M 50 50 C 20 45, 15 85, 30 100 C 40 105, 40 115, 30 120 C 5 130, 10 185, 50 190 C 90 185, 95 130, 70 120 C 60 115, 60 105, 70 100 C 85 85, 80 45, 50 50 Z" />
             </g>
-
-            <!-- Main Violin Body Outline -->
             <path d="M 50 50 C 20 45, 15 85, 30 100 C 40 105, 40 115, 30 120 C 5 130, 10 185, 50 190 C 90 185, 95 130, 70 120 C 60 115, 60 105, 70 100 C 85 85, 80 45, 50 50 Z" stroke-width="1.5" opacity="0.5"/>
-
-            <!-- Fingerboard -->
             <polygon points="46,50 44,110 56,110 54,50" fill="#f0f6fc" opacity="0.1" stroke="none"/>
-
-            <!-- Strings -->
             <line x1="47.5" y1="0" x2="46" y2="140" stroke="#f0f6fc" stroke-width="0.5" opacity="0.4"/>
             <line x1="49.5" y1="0" x2="48.5" y2="140" stroke="#f0f6fc" stroke-width="0.5" opacity="0.4"/>
             <line x1="51.5" y1="0" x2="51.5" y2="140" stroke="#f0f6fc" stroke-width="0.5" opacity="0.4"/>
             <line x1="53.5" y1="0" x2="54" y2="140" stroke="#f0f6fc" stroke-width="0.5" opacity="0.4"/>
-
-            <!-- Neck, Scroll, and Pegs -->
             <path d="M 46 50 L 46 0 C 46 -10, 40 -15, 45 -20 C 50 -25, 55 -20, 50 -15 C 48 -10, 54 -10, 54 0 L 54 50" stroke-width="1.5" opacity="0.5"/>
             <line x1="42" y1="-10" x2="58" y2="-10" stroke-width="1" opacity="0.5"/>
             <line x1="43" y1="-5" x2="57" y2="-5" stroke-width="1" opacity="0.5"/>
-
-            <!-- Bridge -->
             <path d="M 40 125 Q 50 122 60 125" stroke-width="2" opacity="0.7"/>
-
-            <!-- Tailpiece -->
             <path d="M 45 140 L 55 140 L 57 180 Q 50 188 43 180 Z" fill="#f0f6fc" opacity="0.1" stroke-width="1" stroke="#f0f6fc"/>
-
-            <!-- F-Holes -->
             <path d="M 32 110 C 38 115, 30 130, 36 135" stroke-width="1" opacity="0.5"/>
             <path d="M 68 110 C 62 115, 70 130, 64 135" stroke-width="1" opacity="0.5"/>
-
-            <!-- Bow crossing diagonally -->
             <g opacity="0.6">
-                <!-- Bow stick -->
                 <line x1="-15" y1="120" x2="115" y2="85" stroke="#f0f6fc" stroke-width="1.5"/>
-                <!-- Bow hair -->
                 <line x1="-10" y1="125" x2="110" y2="90" stroke="#f0f6fc" stroke-width="0.5" opacity="0.8"/>
             </g>
         </g>
     </g>
 
-    <!-- Realistic Sakura Petals -->
+    <!-- Username & Quote -->
+    <text x="50%" y="75" text-anchor="middle" fill="#58A6FF" font-size="28" font-family="monospace" filter="url(#note-glow)">
+      YTFL
+    </text>
+
+    <text x="50%" y="110" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.85">
+      Maybe...just maybe, the light can reach
+    </text>
+    <text x="50%" y="130" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.85">
+      even the bottom of a dark ocean.
+    </text>
+
+    <!-- Foreground Sakura Petals -->
     <g>
-      <!-- Fast small petals -->
       <use href="#petal3" x="80" y="10">
         <animate attributeName="y" values="-20;240" dur="4s" repeatCount="indefinite"/>
         <animate attributeName="x" values="80;100;70;90" dur="4s" repeatCount="indefinite"/>
@@ -167,8 +211,6 @@
         <animate attributeName="y" values="-20;240" dur="4.5s" repeatCount="indefinite"/>
         <animate attributeName="x" values="200;220;180;210" dur="4.5s" repeatCount="indefinite"/>
       </use>
-
-      <!-- Medium petals -->
       <use href="#petal2" x="350" y="20">
         <animate attributeName="y" values="-20;240" dur="6s" repeatCount="indefinite"/>
         <animate attributeName="x" values="350;370;330;360" dur="6s" repeatCount="indefinite"/>
@@ -177,8 +219,6 @@
         <animate attributeName="y" values="-20;240" dur="5.5s" repeatCount="indefinite"/>
         <animate attributeName="x" values="500;520;480;510" dur="5.5s" repeatCount="indefinite"/>
       </use>
-
-      <!-- Slow drifting petals -->
       <use href="#petal1" x="650" y="15">
         <animate attributeName="y" values="-20;240" dur="8s" repeatCount="indefinite"/>
         <animate attributeName="x" values="650;680;620;660" dur="8s" repeatCount="indefinite"/>
@@ -187,8 +227,6 @@
         <animate attributeName="y" values="-20;240" dur="7s" repeatCount="indefinite"/>
         <animate attributeName="x" values="720;750;690;730" dur="7s" repeatCount="indefinite"/>
       </use>
-
-      <!-- Extra density -->
       <use href="#petal3" x="120" y="50">
         <animate attributeName="y" values="-20;240" dur="5s" repeatCount="indefinite"/>
         <animate attributeName="x" values="120;140;100;130" dur="5s" repeatCount="indefinite"/>
@@ -199,17 +237,4 @@
       </use>
     </g>
 
-    <!-- Username -->
-    <text x="50%" y="75" text-anchor="middle" fill="#58A6FF" font-size="28" font-family="monospace">
-      YTFL
-    </text>
-
-    <!-- Quote -->
-    <text x="50%" y="110" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.85">
-      Maybe...just maybe, the light can reach
-    </text>
-    <text x="50%" y="130" text-anchor="middle" fill="#f0f6fc" font-size="15" font-family="monospace" opacity="0.85">
-      even the bottom of a dark ocean.
-    </text>
-
-  </svg>
+</svg>
