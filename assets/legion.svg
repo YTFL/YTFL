@@ -3,8 +3,8 @@
   <defs>
     <!-- Background -->
     <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#050607"/>
-      <stop offset="100%" stop-color="#000000"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </radialGradient>
 
     <!-- Holographic glow -->
