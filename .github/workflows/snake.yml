@@ -15,7 +15,7 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: YTFL
-          outputs: dist/snake-1.svg?palette=github-dark&color_snake=blue
+          outputs: dist/snake.svg?palette=github-dark&color_snake=blue
            
 
       - name: Deploy to branch
