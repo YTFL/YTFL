@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia.svg" />
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia.svg" width="1000" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/86.svg" />
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/86.svg" width="1000"/>
 </p>
 
 
@@ -15,20 +15,20 @@
 
 <!-- repo gallery -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/legion.svg" width="800"/>
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/legion.svg" width="1000"/>
 </p>
 
 
 <!-- activity graph -->
 <p align="center">
-  <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=YTFL&bg_color=00000000&color=1f6feb&line=1f6feb&point=1f6feb&area=true&hide_border=true" />
+  <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=YTFL&bg_color=00000000&color=1f6feb&line=1f6feb&point=1f6feb&area=true&hide_border=true" width="1000"/>
 </p>
 
 <br>
 
 <!-- snake -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/snake-output/snake.svg" />
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/snake-output/snake.svg" width="1000"/>
 </p>
 
 <br>
