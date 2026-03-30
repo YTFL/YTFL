@@ -1,0 +1,105 @@
+  <svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+          <!-- Plain Square Grid Pattern -->
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1b2129" stroke-width="1"/>
+          </pattern>
+      </defs>
+
+      <style>
+          .text-title { fill: #e74c3c; font-weight: bold; font-family: 'Courier New', Courier, monospace; }
+          .text-subtitle { fill: #5dade2; font-size: 12px; font-family: 'Courier New', Courier, monospace; letter-spacing: 1px; }
+          .text-desc { fill: #c9d1d9; font-size: 14px; line-height: 1.4; }
+          .text-unit { fill: #58a6ff; font-size: 11px; font-family: 'Courier New', Courier, monospace; font-weight: bold; }
+          .grid-bg { fill: url(#grid); }
+          .corner-mark { stroke: #30363d; stroke-width: 1.5; fill: none; transition: stroke 0.3s; }
+          .row-container { cursor: pointer; }
+          .row-container:hover .corner-mark { stroke: #58a6ff; }
+          .row-container:hover .text-title { fill: #ff4d4d; }
+      </style>
+
+      <!-- Background Grid -->
+      <rect width="900" height="700" class="grid-bg" />
+
+      <!-- Header Section -->
+      <g transform="translate(50, 60)">
+          <text x="0" y="0" font-size="26" class="text-title">PROJECT REGISTRY // SYSTEM DATA</text>
+          <text x="0" y="25" class="text-subtitle">OPERATOR ACCESS: YTFL // STATUS: STABLE</text>
+          <line x1="0" y1="45" x2="800" y2="45" stroke="#30363d" stroke-width="1" />
+          <rect x="0" y="43" width="60" height="4" fill="#e74c3c" />
+      </g>
+
+      <!-- Project 1: AttendMate -->
+      <a xlink:href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker" target="_blank">
+          <g class="row-container" transform="translate(50, 140)">
+              <!-- Description on Left -->
+              <g transform="translate(0, 35)">
+                  <text x="600" y="0" font-size="18" class="text-title" text-anchor="end">ATTENDMATE / GRAUWOLF</text>
+                  <text x="600" y="28" class="text-desc" text-anchor="end">A smart attendance tracker and bunk calculator to help students manage their schedules.</text>
+                  <text x="600" y="52" class="text-unit" text-anchor="end">CLASS: UTILITY / ATTENDANCE</text>
+              </g>
+              
+              <!-- Unit Art Container (Right) -->
+              <g id="unit-art-grauwolf" transform="translate(620, 0)">
+                  <path d="M0 15 L0 0 L15 0 M165 0 L180 0 L180 15 M180 95 L180 110 L165 110 M15 110 L0 110 L0 95" class="corner-mark"/>
+              </g>
+          </g>
+      </a>
+
+      <!-- Project 2: Honzuki -->
+      <a xlink:href="https://github.com/YTFL/HonZuki-BookTracker" target="_blank">
+          <g class="row-container" transform="translate(50, 270)">
+              <!-- Description on Left -->
+              <g transform="translate(0, 35)">
+                  <text x="600" y="0" font-size="18" class="text-title" text-anchor="end">HONZUKI / AMEISE</text>
+                  <text x="600" y="28" class="text-desc" text-anchor="end">A dedicated book tracking application for managing reading lists and progress.</text>
+                  <text x="600" y="52" class="text-unit" text-anchor="end">CLASS: PRODUCTIVITY / ARCHIVE</text>
+              </g>
+              
+              <!-- Unit Art Container (Right) -->
+              <g id="unit-art-ameise" transform="translate(620, 0)">
+                  <path d="M0 15 L0 0 L15 0 M165 0 L180 0 L180 15 M180 95 L180 110 L165 110 M15 110 L0 110 L0 95" class="corner-mark"/>
+              </g>
+          </g>
+      </a>
+
+      <!-- Project 3: PDFark -->
+      <a xlink:href="https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter" target="_blank">
+          <g class="row-container" transform="translate(50, 400)">
+              <!-- Description on Left -->
+              <g transform="translate(0, 35)">
+                  <text x="600" y="0" font-size="18" class="text-title" text-anchor="end">PDFARK / EINTAGSFLIEGE</text>
+                  <text x="600" y="28" class="text-desc" text-anchor="end">A simple tool to convert standard PDFs into an eye-friendly dark mode format.</text>
+                  <text x="600" y="52" class="text-unit" text-anchor="end">CLASS: TOOL / VISUAL</text>
+              </g>
+              
+              <!-- Unit Art Container (Right) -->
+              <g id="unit-art-fliege" transform="translate(620, 0)">
+                  <path d="M0 15 L0 0 L15 0 M165 0 L180 0 L180 15 M180 95 L180 110 L165 110 M15 110 L0 110 L0 95" class="corner-mark"/>
+              </g>
+          </g>
+      </a>
+
+      <!-- Project 4: SimpliMap -->
+      <a xlink:href="https://github.com/YTFL/SimpliMap-K-map-Simplifier" target="_blank">
+          <g class="row-container" transform="translate(50, 530)">
+              <!-- Description on Left -->
+              <g transform="translate(0, 35)">
+                  <text x="600" y="0" font-size="18" class="text-title" text-anchor="end">SIMPLIMAP / LÖWE</text>
+                  <text x="600" y="28" class="text-desc" text-anchor="end">An interactive Karnaugh Map solver for simplifying complex boolean logic expressions.</text>
+                  <text x="600" y="52" class="text-unit" text-anchor="end">CLASS: ENGINE / LOGIC</text>
+              </g>
+              
+              <!-- Unit Art Container (Right) -->
+              <g id="unit-art-lowe" transform="translate(620, 0)">
+                  <path d="M0 15 L0 0 L15 0 M165 0 L180 0 L180 15 M180 95 L180 110 L165 110 M15 110 L0 110 L0 95" class="corner-mark"/>
+              </g>
+          </g>
+      </a>
+
+      <!-- Footer -->
+      <g transform="translate(50, 670)">
+          <rect width="10" height="10" fill="#e74c3c" />
+          <text x="20" y="9" class="text-subtitle" font-size="10">ALL SYSTEMS FUNCTIONAL // DATA FEED SECURE</text>
+      </g>
+  </svg>
