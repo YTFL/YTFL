@@ -9393,8 +9393,9 @@
     <!-- Description on Left -->
     <g transform="translate(0, 35)">
       <text x="545" y="0" font-size="18" class="text-title" text-anchor="end">ATTENDMATE / GRAUWOLF</text>
-      <text x="545" y="28" class="text-desc" text-anchor="end">A smart attendance tracker and bunk calculator to help students manage their schedules.</text>
-      <text x="545" y="52" class="text-unit" text-anchor="end">CLASS: UTILITY / ATTENDANCE</text>
+      <text x="545" y="28" class="text-desc" text-anchor="end">A specialized unit designed to monitor participation and automate attendance management.</text>
+      <text x="545" y="56" class="text-desc" text-anchor="end">Calculates real-time data to identify safe absence thresholds while maintaining required status.</text>
+      <text x="545" y="80" class="text-unit" text-anchor="end">CLASS: UTILITY / ATTENDANCE</text>
     </g>
     
   </g>
