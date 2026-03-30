@@ -15,8 +15,9 @@
 
 
 <!-- repo gallery -->
+<!-- grauwolf -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/legion.svg" width="1000"/>
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/grauwolf-card.svg" width="1000"/>
 </p>
 
 
