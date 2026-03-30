@@ -5632,11 +5632,11 @@
     </g>
   <!-- Description on Left -->
     <g transform="translate(0, 35)">
-      <text x="600" y="0" font-size="18" class="text-title" text-anchor="end">PDFARK / EINTAGSFLIEGE</text>
-      <text x="600" y="25" class="text-desc" text-anchor="end">A specialized optical unit designed to convert document luminance for enhanced readability.</text>
-      <text x="600" y="45" class="text-desc" text-anchor="end">Automates contrast inversion to generate high-fidelity dark mode profiles for PDF files.</text>
-      <text x="600" y="70" class="text-unit" text-anchor="end">CLASS: TOOL / VISUAL</text>
+      <text x="590" y="0" font-size="18" class="text-title" text-anchor="end">PDFARK / EINTAGSFLIEGE</text>
+      <text x="590" y="25" class="text-desc" text-anchor="end">A specialized optical unit designed to convert document luminance for enhanced readability.</text>
+      <text x="590" y="45" class="text-desc" text-anchor="end">Automates contrast inversion to generate high-fidelity dark mode profiles for PDF files.</text>
+      <text x="590" y="70" class="text-unit" text-anchor="end">CLASS: TOOL / VISUAL</text>
     </g>
   </g>
-    <rect width="900" height="180" class="grid-bg" />
+  <rect width="900" height="180" class="grid-bg" />
 </svg>
