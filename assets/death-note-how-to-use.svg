@@ -1,7 +1,7 @@
 <svg width="900" height="1200" viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg">
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP&family=UnifrakturCook:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Noto+Serif+JP&amp;family=UnifrakturCook:wght@700&amp;display=swap');
 
     .bg { fill: #050505; }
     .border { stroke: #e6edf3; stroke-width: 4; fill: none; opacity: 0.9; }
@@ -19,7 +19,7 @@
     }
 
     .rule-text { 
-      font-size: 21px; 
+      font-size: 20px; 
       letter-spacing: 0.5px;
     }
 
@@ -34,7 +34,6 @@
     .ornament-stroke { stroke: #e6edf3; fill: none; stroke-width: 2.2; stroke-linecap: round; }
     .ornament-fine { stroke: #e6edf3; fill: none; stroke-width: 1.2; opacity: 0.6; }
     
-    /* Increased intensity and glow for the sunburst */
     .sunburst { 
       stroke: #e6edf3; 
       stroke-width: 1.2; 
@@ -49,54 +48,70 @@
   <!-- Outer Border -->
   <rect x="45" y="45" width="810" height="1110" class="border"/>
 
-  <!-- Enhanced Intricate Gothic Corners -->
+  <!-- Redesigned High-Density Curly Gothic Corners (Outward Sweeping) -->
   <defs>
-    <g id="dn-corner-final">
-      <path d="M-5 -5 L 130 -5 L 130 2 L 2 2 L 2 130 L -5 130 Z" class="ornament" opacity="0.4"/>
-      <g transform="translate(12, 12)">
-        <path d="M0 0 L 70 70 L 60 52 L 52 60 L 0 0 Z" class="ornament"/>
-        <path d="M40 40 L 52 35 L 45 52 L 35 45 Z" class="ornament"/>
-        <path d="M20 5 C 45 -10, 75 5, 65 35 C 55 65, 30 50, 35 35 C 40 20, 55 25, 52 38" class="ornament-stroke"/>
-        <path d="M5 20 C -10 45, 5 75, 35 65 C 65 55, 50 30, 35 35 C 20 40, 25 55, 38 52" class="ornament-stroke"/>
-        <path d="M70 15 C 90 10, 105 30, 95 50 C 85 70, 60 65, 65 45" class="ornament-fine"/>
-        <path d="M15 70 C 10 90, 30 105, 50 95 C 70 85, 65 60, 45 65" class="ornament-fine"/>
-        <path d="M100 20 Q 115 20, 115 40 T 100 60" class="ornament-fine"/>
-        <path d="M20 100 Q 20 115, 40 115 T 60 100" class="ornament-fine"/>
-        <circle cx="5" cy="5" r="3" class="ornament"/>
-        <path d="M85 15 L 92 8 L 99 15 L 92 22 Z" class="ornament"/>
-        <path d="M15 85 L 8 92 L 15 99 L 22 92 Z" class="ornament"/>
-        <path d="M110 50 L 115 45 L 120 50 L 115 55 Z" class="ornament" opacity="0.7"/>
-        <path d="M50 110 L 45 115 L 50 120 L 55 115 Z" class="ornament" opacity="0.7"/>
-        <circle cx="45" cy="15" r="1.5" class="ornament" opacity="0.8"/>
-        <circle cx="15" cy="45" r="1.5" class="ornament" opacity="0.8"/>
-        <circle cx="75" cy="75" r="2" class="ornament" opacity="0.6"/>
-        <circle cx="95" cy="95" r="1.5" class="ornament" opacity="0.4"/>
+    <g id="dn-corner-dense">
+      <!-- Outer Frame Accent -->
+      <path d="M-5 -5 L 220 -5 L 220 2 L 2 2 L 2 220 L -5 220 Z" class="ornament" opacity="0.3"/>
+      
+      <g transform="translate(10, 10)">
+        <!-- Core Spiral (The vertex weight) -->
+        <path d="M0 0 C 30 0, 45 20, 35 45 C 25 70, 0 60, 5 35 C 10 15, 35 25, 25 45" class="ornament-stroke"/>
+        <circle cx="5" cy="5" r="4" class="ornament"/>
+
+        <!-- Primary Outward Curls - Horizontal Axis -->
+        <path d="M50 10 C 80 -15, 120 5, 110 40 C 100 75, 60 65, 65 45 C 70 25, 95 30, 90 55" class="ornament-stroke"/>
+        
+        <!-- Updated Lighter Curls: Bending toward borders (Upward/Left) -->
+        <path d="M120 5 C 150 -15, 190 0, 200 30 C 210 60, 180 80, 160 65 C 140 50, 160 30, 175 35" class="ornament-fine"/>
+        <path d="M180 15 Q 210 10, 215 40 T 190 70" class="ornament-fine" opacity="0.4"/>
+        
+        <!-- Primary Outward Curls - Vertical Axis -->
+        <path d="M10 50 C -15 80, 5 120, 40 110 C 75 100, 65 60, 45 65 C 25 70, 30 95, 55 90" class="ornament-stroke"/>
+        
+        <!-- Updated Lighter Curls: Bending toward borders (Upward/Left) -->
+        <path d="M5 120 C -15 150, 0 190, 30 200 C 60 210, 80 180, 65 160 C 50 140, 30 160, 35 175" class="ornament-fine"/>
+        <path d="M15 180 Q 10 210, 40 215 T 70 190" class="ornament-fine" opacity="0.4"/>
+
+        <!-- Intricate Interlocking Vines (Density Fillers) -->
+        <path d="M60 60 C 80 80, 110 70, 100 45 M60 60 C 40 80, 70 110, 45 100" class="ornament-fine" opacity="0.5"/>
+        <path d="M140 5 Q 170 -10, 190 10" class="ornament-fine" opacity="0.7"/>
+        <path d="M5 140 Q -10 170, 10 190" class="ornament-fine" opacity="0.7"/>
+
+        <!-- Gothic Diamond Accents (Spread along the trail) -->
+        <path d="M105 5 L 115 -5 L 125 5 L 115 15 Z" class="ornament"/>
+        <path d="M5 105 L -5 115 L 5 125 L 15 115 Z" class="ornament"/>
+        <path d="M165 40 L 172 33 L 179 40 L 172 47 Z" class="ornament" opacity="0.6"/>
+        <path d="M40 165 L 33 172 L 40 179 L 47 172 Z" class="ornament" opacity="0.6"/>
+        <path d="M205 20 L 210 15 L 215 20 L 210 25 Z" class="ornament" opacity="0.4"/>
+        <path d="M20 205 L 15 210 L 20 215 L 25 210 Z" class="ornament" opacity="0.4"/>
+        
+        <!-- Finer Details -->
+        <circle cx="85" cy="85" r="1.5" class="ornament" opacity="0.4"/>
+        <circle cx="140" cy="140" r="1" class="ornament" opacity="0.2"/>
       </g>
     </g>
   </defs>
 
   <!-- Placing Corners -->
-  <g transform="translate(45, 45)"><use href="#dn-corner-final"/></g>
-  <g transform="translate(855, 45) scale(-1, 1)"><use href="#dn-corner-final"/></g>
-  <g transform="translate(45, 1155) scale(1, -1)"><use href="#dn-corner-final"/></g>
-  <g transform="translate(855, 1155) scale(-1, -1)"><use href="#dn-corner-final"/></g>
+  <g transform="translate(45, 45)"><use href="#dn-corner-dense"/></g>
+  <g transform="translate(855, 45) scale(-1, 1)"><use href="#dn-corner-dense"/></g>
+  <g transform="translate(45, 1155) scale(1, -1)"><use href="#dn-corner-dense"/></g>
+  <g transform="translate(855, 1155) scale(-1, -1)"><use href="#dn-corner-dense"/></g>
 
-  <!-- Header Section -->
+  <!-- Header Section (Cleaned sunburst) -->
   <g transform="translate(450, 115)">
-    <!-- Reduced size and increased intensity sunburst -->
     <g class="sunburst">
       <circle cx="0" cy="0" r="95" fill="none" stroke-dasharray="1,4"/>
-      <!-- Shorter, brighter lines -->
       <line x1="0" y1="-85" x2="0" y2="-125"/>
       <line x1="0" y1="85" x2="0" y2="125"/>
       <line x1="-85" y1="0" x2="-125" y2="0"/>
       <line x1="85" y1="0" x2="125" y2="0"/>
-      <line x1="62" y1="62" x2="90" y2="90"/>
-      <line x1="-62" y1="-62" x2="-90" y2="-90"/>
-      <line x1="62" y1="-62" x2="90" y2="-90"/>
-      <line x1="-62" y1="62" x2="-90" y2="90"/>
+      <line x1="60" y1="60" x2="88" y2="88"/>
+      <line x1="-60" y1="-60" x2="-88" y2="-88"/>
+      <line x1="60" y1="-60" x2="88" y2="-88"/>
+      <line x1="-60" y1="60" x2="-88" y2="88"/>
     </g>
-    <!-- Skull Circle -->
     <circle cx="0" cy="0" r="80" fill="#000" stroke="#e6edf3" stroke-width="4"/>
     <text y="28" text-anchor="middle" font-size="90" fill="#e6edf3">☠</text>
   </g>
@@ -105,42 +120,49 @@
   <text x="450" y="290" text-anchor="middle" class="gothic title">WHO AM I</text>
   <text x="450" y="345" text-anchor="middle" class="gothic" font-size="36">YTFL</text>
 
-  <!-- Rules List -->
-  <g transform="translate(100, 440)">
+  <!-- Rules List (Aligned further right for better balance) -->
+  <g transform="translate(185, 430)">
     
     <text class="gothic rule-text">
-      <tspan x="0" dy="0">◦ I construct structured, logic-driven solutions to address real-world problems with efficiency.</tspan>
+      <tspan x="0" dy="0">◦ I construct structured, logic-driven solutions to address real-world</tspan>
+      <tspan x="0" dy="24">problems with efficiency.</tspan>
       <tspan x="0" dy="28" class="jp">現実の問題を効率的に解決するため、構造化された論理駆動型ソリューションを構築する。</tspan>
     </text>
 
-    <text class="gothic rule-text" y="90">
-      <tspan x="0">◦ I operate within automation systems, decision engines, and productivity-oriented workflows.</tspan>
+    <text class="gothic rule-text" y="95">
+      <tspan x="0">◦ I operate within automation systems, decision engines, and</tspan>
+      <tspan x="0" dy="24">productivity-oriented workflows.</tspan>
       <tspan x="0" dy="28" class="jp">自動化システム、意思決定エンジン、生産性重視のワークフロー内で動作する。</tspan>
     </text>
 
-    <text class="gothic rule-text" y="180">
-      <tspan x="0">◦ I utilize TypeScript, Python, and Node.js to develop scalable backend and API-driven architectures.</tspan>
-      <tspan x="0" dy="28" class="jp">TypeScript, Python, Node.js を活用し、拡張可能なバックエンドとAPI駆動型構成を開発する。</tspan>
+    <text class="gothic rule-text" y="190">
+      <tspan x="0">◦ I utilize TypeScript, Python, and Node.js to develop scalable</tspan>
+      <tspan x="0" dy="24">backend and API-driven architectures.</tspan>
+      <tspan x="0" dy="28" class="jp">TypeScript, Python, Node.js を活用し、拡張可能な構成を開発する。</tspan>
     </text>
 
-    <text class="gothic rule-text" y="270">
-      <tspan x="0">◦ I decompose complex problems into deterministic units and assemble modular, composable systems.</tspan>
-      <tspan x="0" dy="28" class="jp">複雑な問題を決定論的単位に分解し、モジュール化された構成可能なシステムを組み立てる。</tspan>
+    <text class="gothic rule-text" y="285">
+      <tspan x="0">◦ I decompose complex problems into deterministic units and</tspan>
+      <tspan x="0" dy="24">assemble modular, composable systems.</tspan>
+      <tspan x="0" dy="28" class="jp">複雑な問題を決定論的単位に分解し、モジュール構成を組み立てる。</tspan>
     </text>
 
-    <text class="gothic rule-text" y="360">
-      <tspan x="0">◦ I prioritize clarity, efficiency, and low-entropy outcomes over unnecessary abstraction and complexity.</tspan>
-      <tspan x="0" dy="28" class="jp">不必要な抽象化よりも、明快さ、効率、そして低エントロピーな結果を優先する。</tspan>
+    <text class="gothic rule-text" y="380">
+      <tspan x="0">◦ I prioritize clarity, efficiency, and low-entropy outcomes over</tspan>
+      <tspan x="0" dy="24">unnecessary abstraction and complexity.</tspan>
+      <tspan x="0" dy="28" class="jp">不必要な抽象化よりも、明快さ、効率、低エントロピーな結果を優先する。</tspan>
     </text>
 
-    <text class="gothic rule-text" y="450">
-      <tspan x="0">◦ I design systems to simplify workflows, reduce manual effort, and improve decision-making efficiency.</tspan>
-      <tspan x="0" dy="28" class="jp">ワークフローを簡素化し、手動作業を減らし、意思決定を最適化するシステムを設計する。</tspan>
+    <text class="gothic rule-text" y="475">
+      <tspan x="0">◦ I design systems to simplify workflows, reduce manual effort,</tspan>
+      <tspan x="0" dy="24">and improve decision-making efficiency.</tspan>
+      <tspan x="0" dy="28" class="jp">ワークフローを簡素化し、手動作業を減らし、意思決定を最適化する。</tspan>
     </text>
 
-    <text class="gothic rule-text" y="540">
-      <tspan x="0">◦ I continuously evolve toward building scalable, constraint-aware architectures through LLM integration.</tspan>
-      <tspan x="0" dy="28" class="jp">LLM統合を通じて、拡張可能で制約を意識した知的な自動化構築へと進化し続ける。</tspan>
+    <text class="gothic rule-text" y="570">
+      <tspan x="0">◦ I continuously evolve toward building scalable, constraint-aware</tspan>
+      <tspan x="0" dy="24">architectures through LLM integration.</tspan>
+      <tspan x="0" dy="28" class="jp">LLM統合を通じて、制約を意識した知的な自動化構築へと進化し続ける。</tspan>
     </text>
 
   </g>
