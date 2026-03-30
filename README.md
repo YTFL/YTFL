@@ -8,12 +8,6 @@
   <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/86.svg" width="1000"/>
 </p>
 
-<!--typing animation-->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=20&duration=3500&color=FF2E2E&center=true&vCenter=true&width=600&lines=outcomes+delivered+without+presence;processes+completed+without+trace;execution+under+zero+visibility" />
-</p>
-
-
 <!-- repo gallery -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/grauwolf-card.svg" width="1000"/>
