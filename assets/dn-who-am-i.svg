@@ -1,0 +1,38 @@
+<svg width="100%" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="800" height="260" fill="#0d1117" rx="10"/>
+
+  <!-- Image Container Group (paste your SVG inside and adjust transform/scale) -->
+  <g id="image-container" transform="translate(40,160) scale(1)">
+    <rect width="120" height="80" rx="6"
+          fill="none" stroke="#ff4d4d" stroke-opacity="0.25"/>
+    
+    <!-- YOUR SVG GOES HERE -->
+  </g>
+
+  <!-- Divider -->
+  <line x1="200" y1="40" x2="200" y2="220"
+        stroke="#ff4d4d" stroke-opacity="0.12"/>
+
+  <!-- Text -->
+  <g font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace">
+
+    <!-- Header -->
+    <text x="220" y="60" fill="#ff4d4d" font-size="14" letter-spacing="2">
+      WHO AM I / YTFL
+    </text>
+
+    <!-- Body -->
+    <text x="220" y="95" fill="#c9d1d9" font-size="13">
+      <tspan x="220" dy="0">I build systems that focus on automation, clarity, and efficiency.</tspan>
+      <tspan x="220" dy="20">Most of my work involves designing tools and logic-driven solutions</tspan>
+      <tspan x="220" dy="20">that simplify complex processes.</tspan>
+      <tspan x="220" dy="20">I prefer structured, modular approaches and aim to make systems</tspan>
+      <tspan x="220" dy="20">predictable and easy to maintain.</tspan>
+      <tspan x="220" dy="20">I care more about practical outcomes than unnecessary complexity.</tspan>
+    </text>
+
+  </g>
+
+</svg>
