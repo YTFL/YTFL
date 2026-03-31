@@ -934,7 +934,7 @@
     </text>
     
     <!-- WHO AM I Body -->
-    <text x="220" y="90" fill="#c9d1d9" font-size="13">
+    <text x="220" y="75" fill="#c9d1d9" font-size="13">
       <tspan x="220" dy="0">I build systems focused on automation, clarity, and efficiency.</tspan>
       <tspan x="220" dy="20">I design logic-driven tools to simplify complex processes.</tspan>
     </text>
