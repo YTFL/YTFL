@@ -7,6 +7,10 @@
   <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/dn-who-am-i.svg" width="1000" />
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/steins-gate-tech-stack.svg" width="1000" />
+</p>
+
 <!--projects banner eighty six-->
 <p align="center">
   <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/86.svg" width="1000"/>
