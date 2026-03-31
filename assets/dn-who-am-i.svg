@@ -928,19 +928,27 @@
   <!-- Text -->
   <g font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace">
 
-    <!-- Header -->
+    <!-- WHO AM I Header -->
     <text x="220" y="60" fill="#ff4d4d" font-size="14" letter-spacing="2">
-      WHO AM I / YTFL
+      WHO AM I
     </text>
-
-    <!-- Body -->
-    <text x="220" y="95" fill="#c9d1d9" font-size="13">
-      <tspan x="220" dy="0">I build systems that focus on automation, clarity, and efficiency.</tspan>
-      <tspan x="220" dy="20">Most of my work involves designing tools and logic-driven solutions</tspan>
-      <tspan x="220" dy="20">that simplify complex processes.</tspan>
-      <tspan x="220" dy="20">I prefer structured, modular approaches and aim to make systems</tspan>
-      <tspan x="220" dy="20">predictable and easy to maintain.</tspan>
-      <tspan x="220" dy="20">I care more about practical outcomes than unnecessary complexity.</tspan>
+    
+    <!-- WHO AM I Body -->
+    <text x="220" y="90" fill="#c9d1d9" font-size="13">
+      <tspan x="220" dy="0">I build systems focused on automation, clarity, and efficiency.</tspan>
+      <tspan x="220" dy="20">I design logic-driven tools to simplify complex processes.</tspan>
+    </text>
+    
+    <!-- CURRENT FOCUS Header -->
+    <text x="220" y="155" fill="#ff4d4d" font-size="14" letter-spacing="2">
+      CURRENT FOCUS
+    </text>
+    
+    <!-- CURRENT FOCUS Body -->
+    <text x="220" y="170" fill="#c9d1d9" font-size="13">
+      <tspan x="220" dy="0">Automation &amp; Decision Systems — reducing manual workflows</tspan>
+      <tspan x="220" dy="20">Scalable Backend Systems — building reliable API-driven tools</tspan>
+      <tspan x="220" dy="20">Intelligent Workflows — exploring practical LLM integration</tspan>
     </text>
 
   </g>
