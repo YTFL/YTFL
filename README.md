@@ -1,24 +1,38 @@
 <!--ylia banner-->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia-title.svg" width="1000" />
+  <a href="https://github.com/YTFL">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ylia-title.svg" width="1000" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/dn-who-am-i.svg" width="1000" />
+  <a href="https://github.com/YTFL">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/dn-who-am-i.svg" width="1000" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/steins-gate-tech-stack.svg" width="1000" />
+  <a href="https://github.com/YTFL">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/steins-gate-tech-stack.svg" width="1000" />
+  </a>
 </p>
 
 <!--projects banner eighty six-->
 <p align="center">
   <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/86.svg" width="1000"/>
   <!-- repo gallery -->
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/grauwolf-card.svg" width="1000"/>
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ameise-card.svg" width="1000"/>
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/eintagsfliege-card.svg" width="1000"/>
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/lowe-card.svg" width="1000"/>
+  <a href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/grauwolf-card.svg" width="1000"/>
+  </a>
+  <a href="https://github.com/YTFL/HonZuki-BookTracker">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ameise-card.svg" width="1000"/>
+  </a>
+  <a href="https://github.com/YTFL/PDFark-Mode-PDF-Darkmode-Converter">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/eintagsfliege-card.svg" width="1000"/>
+  </a>
+  <a href="https://github.com/YTFL/SimpliMap-K-map-Simplifier">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/lowe-card.svg" width="1000"/>
+  </a>
 </p>
 
 
