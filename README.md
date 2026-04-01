@@ -19,7 +19,9 @@
 
 <!--projects banner eighty six-->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/86.svg" width="1000"/>
+  <a href="https://github.com/YTFL?tab=repositories">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/86.svg" width="1000"/>
+  </a>
   <!-- repo gallery -->
   <a href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker">
     <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/grauwolf-card.svg" width="1000"/>
