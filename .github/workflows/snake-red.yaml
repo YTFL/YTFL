@@ -1,0 +1,28 @@
+name: Generate Snake (Red Telemetry)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"  # runs once a day at 00:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate red telemetry snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: YTFL
+          outputs: |
+            dist/snake-red.svg?color_snake=#ff4d4d&color_dots=#0b0f14,#1f2937,#3b82f6,#60a5fa,#93c5fd
+
+      - name: Deploy to branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: snake-red-output
