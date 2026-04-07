@@ -1,0 +1,36 @@
+<svg width="900" height="180" viewBox="0 0 900 180" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="900" height="240" fill="#0d1117"/>
+  <defs>
+    <!-- Plain Square Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1b2129" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .text-title { fill: #e74c3c; font-weight: bold; font-family: 'Courier New', Courier, monospace; }
+    .text-desc { fill: #c9d1d9; font-size: 14px; line-height: 1.4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .text-unit { fill: #58a6ff; font-size: 11px; font-family: 'Courier New', Courier, monospace; font-weight: bold; }
+    .grid-bg { fill: url(#grid); }
+    .corner-mark { stroke: #30363d; stroke-width: 1.5; fill: none; }
+    
+    .row-container { pointer-events: none; }
+  </style>
+
+  <!-- Project 4: SimpliMap -->
+  <g class="row-container" transform="translate(50, 35)">
+    
+    <!-- Unit Art Container (Right) -->
+    <g id="unit-art-lowe" transform="translate(445, 0) scale(0.20)">
+    </g>
+
+  </g>
+  <!-- Background Grid -->
+  <rect width="900" height="180" class="grid-bg" />
+      <!-- Description on Left -->
+  <g class="row-container" transform="translate(50, 35)">
+    <g transform="translate(0, 35)">
+      <text x="445" y="0" font-size="18" class="text-title" text-anchor="end">WARMATRIX / RABE</text>
+      <text x="445" y="25" class="text-desc" text-anchor="end">A reconnaissance-linked command interface for real-time tactical simulation.</text>
+      <text x="445" y="45" class="text-desc" text-anchor="end">Aggregates battlefield state, AI-driven analysis, and simulation data into a unified operational map.</text>
+      <text x="445" y="70" class="text-unit" text-anchor="end">CLASS: COMMAND / RECON / INTERFACE</text>
