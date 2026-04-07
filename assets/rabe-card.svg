@@ -17,7 +17,7 @@
     .row-container { pointer-events: none; }
   </style>
 
-  <!-- Project 4: SimpliMap -->
+  <!-- Project 4 -->
   <g class="row-container" transform="translate(50, 35)">
     
     <!-- Unit Art Container (Right) -->
@@ -25,12 +25,18 @@
     </g>
 
   </g>
+
   <!-- Background Grid -->
   <rect width="900" height="180" class="grid-bg" />
-      <!-- Description on Left -->
+
+  <!-- Description on Left -->
   <g class="row-container" transform="translate(50, 35)">
     <g transform="translate(0, 35)">
       <text x="445" y="0" font-size="18" class="text-title" text-anchor="end">WARMATRIX / RABE</text>
       <text x="445" y="25" class="text-desc" text-anchor="end">A reconnaissance-linked command interface for real-time tactical simulation.</text>
       <text x="445" y="45" class="text-desc" text-anchor="end">Aggregates battlefield state, AI-driven analysis, and simulation data into a unified operational map.</text>
       <text x="445" y="70" class="text-unit" text-anchor="end">CLASS: COMMAND / RECON / INTERFACE</text>
+    </g>
+  </g>
+
+</svg>
