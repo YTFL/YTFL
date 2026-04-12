@@ -2229,8 +2229,8 @@
   <g class="row-container" transform="translate(50, 35)">
     <g transform="translate(0, 35)">
       <text x="600" y="0" font-size="18" class="text-title" text-anchor="end">HIRELOOP / SKORPION</text>
-      <text x="600" y="25" class="text-desc" text-anchor="end">A backend automation unit designed to execute repetitive job application workflows at scale.</text>
-      <text x="600" y="45" class="text-desc" text-anchor="end">Continuously processes candidate submissions and manages application pipelines..</text>
+      <text x="600" y="25" class="text-desc" text-anchor="end">An automation unit designed to execute repetitive job application workflows at scale.</text>
+      <text x="600" y="45" class="text-desc" text-anchor="end">Continuously processes candidate submissions and manages application pipelines.</text>
       <text x="600" y="70" class="text-unit" text-anchor="end">CLASS: UTILITY / AUTOMATION</text>
     </g>
   </g>
