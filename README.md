@@ -38,6 +38,9 @@
     <a href="https://github.com/YTFL/WarMatrix">
     <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/rabe-card.svg" width="1000"/>
   </a>
+  <a href="https://github.com/YTFL/HireLoop">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/skorpion-card.svg" width="1000"/>
+  </a>
 </p>
 
 
