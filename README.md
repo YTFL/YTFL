@@ -23,14 +23,17 @@
     <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/86.svg" width="1000"/>
   </a>
   <!-- repo gallery -->
+  <a href="https://github.com/YTFL/WarMatrix">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/rabe-card.svg" width="1000"/>
+  </a>
   <a href="https://github.com/YTFL/AttendMate-Bunk-Calculator-Attendance-Tracker">
     <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/grauwolf-card.svg" width="1000"/>
   </a>
+  <a href="https://github.com/YTFL/Canele-Deterministic-Collection-Manager-Acquisition-Planner">
+    <img src="https://raw.githubusercontent.com/YTFL/YTFL/76764ea10f6df9496712ae63d6f680ed28a96694/assets/phonix-card.svg" width="1000"/>
+  </a>
   <a href="https://github.com/YTFL/HonZuki-BookTracker">
     <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/ameise-card.svg" width="1000"/>
-  </a>
-  <a href="https://github.com/YTFL/WarMatrix">
-    <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/rabe-card.svg" width="1000"/>
   </a>
   <a href="https://github.com/YTFL/HireLoop">
     <img src="https://raw.githubusercontent.com/YTFL/YTFL/main/assets/skorpion-card.svg" width="1000"/>
