@@ -1,0 +1,183 @@
+<svg id="drStoneMainBanner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="auto" class="block w-full h-auto select-none">
+      <defs>
+        <pattern id="cleanGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="0.9" fill="#1c2128"/>
+        </pattern>
+      </defs>
+
+      <rect width="1200" height="360" fill="#0d1117"/>
+      <rect width="1200" height="360" fill="url(#cleanGrid)"/>
+
+      <rect x="16" y="16" width="1168" height="328" rx="6" fill="none" stroke="#21262d" stroke-width="1"/>
+
+      <g transform="translate(48, 48)">
+        <g fill="#34d399">
+          <path d="M0,0 h4 v6 l7,-6 h5 l-8,7 l9,9 h-5 l-7,-7 v7 h-4 Z"/>
+          <path d="M18,0 h4 v16 h-4 Z"/>
+          <path d="M26,0 h4 l7,11 v-11 h4 v16 h-4 l-7,-11 v11 h-4 Z"/>
+          <path d="M48,0 h11 v3 h-8 v10 h8 v-5 h-4 v-3 h7 v11 h-14 Z"/>
+          <path d="M64,0 h8 c5,0 8,3 8,8 c0,5 -3,8 -8,8 h-8 Z m4,3 v10 h4 c3,0 5,-2 5,-5 c0,-3 -2,-5 -5,-5 Z"/>
+          <path d="M85,0 h9 c5,0 8,4 8,8 c0,4 -3,8 -8,8 h-9 c-5,0 -8,-4 -8,-8 c0,-4 3,-8 8,-8 Z m0,3 c-3,0 -4,2 -4,5 c0,3 1,5 4,5 h9 c3,0 4,-2 4,-5 c0,-3 -1,-5 -4,-5 Z"/>
+          <path d="M106,0 h4 l5,8 l5,-8 h4 v16 h-4 v-10 l-5,8 h-1 l-5,-8 v10 h-4 Z"/>
+          <path d="M135,0 h6 c4,0 6,3 6,8 c0,5 -2,8 -6,8 h-6 c-4,0 -6,-3 -6,-8 c0,-5 2,-8 6,-8 Z m0,3 c-2,0 -3,2 -3,5 c0,3 1,5 3,5 h6 c2,0 3,-2 3,-5 c0,-3 -1,-5 -3,-5 Z"/>
+          <path d="M152,0 h13 v3 h-9 v4 h7 v3 h-7 v6 h-4 Z"/>
+          <path d="M174,0 h12 v3 h-9 v3 h8 c3,0 4,2 4,4 v3 c0,2 -2,3 -4,3 h-12 v-3 h9 v-3 h-8 c-3,0 -4,-2 -4,-4 v-3 c0,-2 2,-3 4,-3 Z"/>
+          <path d="M194,0 h12 v3 h-9 v10 h9 v3 h-12 Z"/>
+          <path d="M211,0 h4 v16 h-4 Z"/>
+          <path d="M219,0 h13 v3 h-9 v3 h7 v3 h-7 v4 h9 v3 h-13 Z"/>
+          <path d="M236,0 h4 l7,11 v-11 h4 v16 h-4 l-7,-11 v11 h-4 Z"/>
+          <path d="M256,0 h12 v3 h-9 v10 h9 v3 h-12 Z"/>
+          <path d="M272,0 h13 v3 h-9 v3 h7 v3 h-7 v4 h9 v3 h-13 Z"/>
+        </g>
+
+        <text x="1104" y="12" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="11" font-weight="600" fill="#6e7681" text-anchor="end">
+          5738 AD
+        </text>
+
+        <line x1="0" y1="26" x2="1104" y2="26" stroke="#21262d" stroke-width="1"/>
+      </g>
+
+      <g transform="translate(48, 108)">
+        <g fill="#10b981">
+          <path d="M0,0 h6 c3,0 4,2 4,5 v3 c0,3 -1,5 -4,5 h-6 c-3,0 -4,-2 -4,-5 v-3 c0,-3 1,-5 4,-5 Z m0,3 v7 h6 v-7 Z"/>
+          <path d="M14,0 h4 v13 h-4 Z"/>
+          <path d="M26,0 h3 v10 h6 v3 h-9 Z"/>
+          <path d="M38,0 h5 c3,0 4,2 4,5 v3 c0,3 -1,5 -4,5 h-5 c-3,0 -4,-2 -4,-5 v-3 c0,-3 1,-5 4,-5 Z m0,3 v7 h5 v-7 Z"/>
+          <path d="M50,0 h8 v3 h-5 v7 h5 v-3 h-3 v-2 h6 v8 h-11 Z"/>
+          <path d="M62,0 h3 v13 h-3 Z"/>
+          <path d="M68,0 h8 v3 h-5 v7 h5 v3 h-8 Z"/>
+        </g>
+
+        <g transform="translate(0, 24)" fill="#f0f6fc">
+          <path d="M0,0 h14 v4 h-10 v3 h8 c3,0 4,1 4,3 v6 c0,2 -1,3 -4,3 h-12 v-4 h9 v-4 h-7 c-3,0 -4,-1 -4,-3 v-4 c0,-2 1,-3 4,-3 Z"/>
+          <path d="M18,5 h4 v14 h-4 Z m0,-5 h4 v3 h-4 Z"/>
+          <path d="M26,5 h4 v2 c1,-2 3,-2 5,-2 c2,0 4,1 4,3 c1,-2 3,-2 5,-2 c3,0 4,2 4,5 v8 h-4 v-7 c0,-2 -1,-3 -2,-3 c-2,0 -3,1 -3,3 v7 h-4 v-7 c0,-2 -1,-3 -2,-3 c-2,0 -3,1 -3,3 v7 h-4 Z"/>
+          <path d="M51,5 h4 v2 c1,-2 3,-2 5,-2 c3,0 5,2 5,6 c0,4 -2,6 -5,6 c-2,0 -4,-1 -4,-2 v7 h-4 Z m4,5 v4 c0,2 1,3 2,3 c2,0 3,-1 3,-3 c0,-2 -1,-3 -3,-3 c-1,0 -2,0 -2,-1 Z"/>
+          <path d="M68,0 h4 v19 h-4 Z"/>
+          <path d="M76,5 h4 v14 h-4 Z m0,-5 h4 v3 h-4 Z"/>
+          <path d="M84,0 h5 l4,9 l4,-9 h5 v19 h-4 v-13 l-4,9 h-2 l-4,-9 v13 h-4 Z"/>
+          <path d="M106,5 h8 v3 h-5 v3 h5 v8 h-4 v-2 c-1,1 -2,2 -4,2 c-2,0 -4,-1 -4,-4 c0,-3 2,-4 5,-4 h3 v-2 h-5 Z m4,6 h-2 c-1,0 -2,1 -2,2 c0,1 1,2 2,2 c1,0 2,-1 2,-2 Z"/>
+          <path d="M118,5 h4 v2 c1,-2 3,-2 5,-2 c3,0 5,2 5,6 c0,4 -2,6 -5,6 c-2,0 -4,-1 -4,-2 v7 h-4 Z m4,5 v4 c0,2 1,3 2,3 c2,0 3,-1 3,-3 c0,-2 -1,-3 -3,-3 c-1,0 -2,0 -2,-1 Z"/>
+        </g>
+
+        <text x="0" y="68" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="11" font-weight="700" fill="#f0883e">
+          Gear Calculator
+        </text>
+
+        <text x="0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="11" fill="#8b949e">
+          <tspan x="0" dy="0">Algorithmic Karnaugh Map</tspan>
+          <tspan x="0" dy="19">solver and Boolean</tspan>
+          <tspan x="0" dy="19">minimization engine</tspan>
+          <tspan x="0" dy="19">from first principles</tspan>
+        </text>
+
+        <text x="0" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="9.5" fill="#6e7681">
+          Vacuum logic switches
+        </text>
+      </g>
+
+      <line x1="410" y1="108" x2="410" y2="295" stroke="#1c2128" stroke-width="1" stroke-dasharray="4 4"/>
+
+      <g transform="translate(445, 108)">
+        <g fill="#34d399">
+          <path d="M0,0 h6 c3,0 4,2 4,5 v3 c0,3 -1,5 -4,5 h-6 c-3,0 -4,-2 -4,-5 v-3 c0,-3 1,-5 4,-5 Z m0,3 v7 h6 v-7 Z"/>
+          <path d="M14,0 h9 v3 h-6 v2 c2,0 6,1 6,4 v1 c0,2 -2,3 -5,3 h-7 v-3 h6 v-1 c0,-1 -2,-2 -4,-2 h-2 Z"/>
+          <path d="M28,0 h5 c3,0 4,2 4,5 v3 c0,3 -1,5 -4,5 h-5 c-3,0 -4,-2 -4,-5 v-3 c0,-3 1,-5 4,-5 Z m0,3 v7 h5 v-7 Z"/>
+          <path d="M40,0 h7 c3,0 4,1 4,4 c0,3 -1,4 -4,4 h-4 v5 h-3 Z m3,3 v3 h4 c1,0 2,0 2,-1.5 c0,-1.5 -1,-1.5 -2,-1.5 Z"/>
+          <path d="M53,0 h9 v3 h-3 v10 h-3 v-10 h-3 Z"/>
+          <path d="M64,0 h3 v13 h-3 Z"/>
+          <path d="M70,0 h8 v3 h-5 v7 h5 v3 h-8 Z"/>
+          <path d="M80,0 h8 v3 h-6 v2 h5 c2,0 3,1 3,3 v2 c0,2 -1,3 -3,3 h-8 v-3 h6 v-2 h-5 c-2,0 -3,-1 -3,-3 v-2 c0,-2 1,-3 3,-3 Z"/>
+        </g>
+
+        <g transform="translate(0, 24)" fill="#f0f6fc">
+          <path d="M0,0 h9 c4,0 6,2 6,6 c0,4 -2,6 -6,6 h-5 v7 h-4 Z m4,4 v5 h5 c2,0 3,-1 3,-2.5 c0,-1.5 -1,-2.5 -3,-2.5 Z"/>
+          <path d="M18,0 h8 c5,0 8,3 8,9.5 c0,6.5 -3,9.5 -8,9.5 h-8 Z m4,4 v11 h4 c3,0 5,-2 5,-5.5 c0,-3.5 -2,-5.5 -5,-5.5 Z"/>
+          <path d="M37,0 h13 v4 h-9 v4 h7 v4 h-7 v7 h-4 Z"/>
+          <path d="M53,5 h8 v3 h-5 v3 h5 v8 h-4 v-2 c-1,1 -2,2 -4,2 c-2,0 -4,-1 -4,-4 c0,-3 2,-4 5,-4 h3 v-2 h-5 Z m4,6 h-2 c-1,0 -2,1 -2,2 c0,1 1,2 2,2 c1,0 2,-1 2,-2 Z"/>
+          <path d="M65,5 h4 v3 c1,-2 2,-3 4,-3 v4 c-3,0 -4,1 -4,4 v6 h-4 Z"/>
+          <path d="M75,0 h4 v11 l5,-6 h5 l-6,6 l6,8 h-5 l-5,-7 v7 h-4 Z"/>
+          <path d="M92,10 h7 v3 h-7 Z"/>
+          <path d="M102,0 h5 l4,9 l4,-9 h5 v19 h-4 v-13 l-4,9 h-2 l-4,-9 v13 h-4 Z"/>
+          <path d="M123,5 h6 c3,0 5,2 5,7 c0,5 -2,7 -5,7 h-6 c-3,0 -5,-2 -5,-7 c0,-5 2,-7 5,-7 Z m0,4 c-1,0 -2,1 -2,3 c0,2 1,3 2,3 h6 c1,0 2,-1 2,-3 c0,-2 -1,-3 -2,-3 Z"/>
+          <path d="M145,0 h4 v19 h-4 v-2 c-1,1 -2,2 -4,2 c-3,0 -5,-2 -5,-7 c0,-5 2,-7 5,-7 c2,0 3,1 4,2 Z m-3,8 c-2,0 -3,1 -3,3 c0,2 1,3 3,3 c1,0 3,-1 3,-3 c0,-2 -2,-3 -3,-3 Z"/>
+          <path d="M152,5 h10 v3 h-7 v2 h7 v3 h-7 v3 h7 v3 h-10 Z"/>
+        </g>
+
+        <text x="0" y="68" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="11" font-weight="700" fill="#f0883e">
+          Quartz Lenses
+        </text>
+
+        <text x="0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="11" fill="#8b949e">
+          <tspan x="0" dy="0">High-contrast document</tspan>
+          <tspan x="0" dy="19">converter translating</tspan>
+          <tspan x="0" dy="19">bright PDF canvases into</tspan>
+          <tspan x="0" dy="19">reader-grade dark tones</tspan>
+        </text>
+
+        <text x="0" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="9.5" fill="#6e7681">
+          Polished quartz filaments
+        </text>
+      </g>
+
+      <line x1="805" y1="108" x2="805" y2="295" stroke="#1c2128" stroke-width="1" stroke-dasharray="4 4"/>
+
+      <g transform="translate(840, 108)">
+        <g fill="#059669">
+          <path d="M0,0 h6 c3,0 4,2 4,5 v3 c0,3 -1,5 -4,5 h-6 c-3,0 -4,-2 -4,-5 v-3 c0,-3 1,-5 4,-5 Z m0,3 v7 h6 v-7 Z"/>
+          <path d="M14,0 h8 v3 h-5 v2 h4 c2,0 3,1 3,3 v2 c0,2 -1,3 -3,3 h-8 v-3 h5 v-2 h-4 v-2 h4 v-1 h-5 Z"/>
+          <path d="M28,0 h3 l3,6 l3,-6 h3 v13 h-3 v-8 l-3,6 h-1 l-3,-6 v8 h-2 Z"/>
+          <path d="M44,0 h8 v3 h-5 v2 h4 v2 h-4 v3 h5 v3 h-8 Z"/>
+          <path d="M55,0 h3 l3,6 l3,-6 h3 v13 h-3 v-8 l-3,6 h-1 l-3,-6 v8 h-2 Z"/>
+          <path d="M71,0 h5 c3,0 4,2 4,5 v3 c0,3 -1,5 -4,5 h-5 c-3,0 -4,-2 -4,-5 v-3 c0,-3 1,-5 4,-5 Z m0,3 v7 h5 v-7 Z"/>
+          <path d="M83,0 h7 c3,0 4,1 4,4 c0,2 -1,3 -3,4 l4,5 h-3 l-3,-5 h-3 v5 h-3 Z m3,3 v3 h4 c1,0 2,0 2,-1.5 c0,-1.5 -1,-1.5 -2,-1.5 Z"/>
+          <path d="M96,0 h3 l3,5 l3,-5 h3 l-4,7 v6 h-3 v-6 Z"/>
+        </g>
+
+        <g transform="translate(0, 24)" fill="#f0f6fc">
+          <path d="M0,0 h4 v8 h9 v-8 h4 v19 h-4 v-8 h-9 v8 h-4 Z"/>
+          <path d="M20,5 h8 v3 h-5 v3 h5 v8 h-4 v-2 c-1,1 -2,2 -4,2 c-2,0 -4,-1 -4,-4 c0,-3 2,-4 5,-4 h3 v-2 h-5 Z m4,6 h-2 c-1,0 -2,1 -2,2 c0,1 1,2 2,2 c1,0 2,-1 2,-2 Z"/>
+          <path d="M32,5 h8 v3 h-6 v2 h5 c2,0 3,1 3,3 v3 c0,2 -1,3 -3,3 h-8 v-3 h6 v-2 h-5 c-2,0 -3,-1 -3,-3 v-3 c0,-2 1,-3 3,-3 Z"/>
+          <path d="M43,0 h4 v7 c1,-2 3,-2 5,-2 c3,0 4,2 4,5 v9 h-4 v-8 c0,-2 -1,-3 -2,-3 c-2,0 -3,1 -3,3 v8 h-4 Z"/>
+          <path d="M59,10 h6 v3 h-6 Z"/>
+          <path d="M68,0 h14 v4 h-5 v15 h-4 v-15 h-5 Z"/>
+          <path d="M85,5 h8 v3 h-5 v3 h5 v8 h-4 v-2 c-1,1 -2,2 -4,2 c-2,0 -4,-1 -4,-4 c0,-3 2,-4 5,-4 h3 v-2 h-5 Z m4,6 h-2 c-1,0 -2,1 -2,2 c0,1 1,2 2,2 c1,0 2,-1 2,-2 Z"/>
+          <path d="M96,0 h4 v7 c1,-2 3,-2 5,-2 c3,0 5,2 5,7 c0,5 -2,7 -5,7 c-2,0 -4,-1 -4,-2 v2 h-4 Z m4,8 c0,-2 1,-3 2,-3 c2,0 3,1 3,3 c0,2 -1,3 -3,3 c-1,0 -2,-1 -2,-3 Z"/>
+          <path d="M113,0 h4 v19 h-4 Z"/>
+          <path d="M120,5 h10 v3 h-7 v2 h7 v3 h-7 v3 h7 v3 h-10 Z"/>
+          <path d="M133,10 h6 v3 h-6 Z"/>
+          <path d="M142,0 h12 v4 h-8 v3 h6 c3,0 4,1 4,3 v6 c0,2 -1,3 -4,3 h-11 v-4 h8 v-4 h-5 c-3,0 -4,-1 -4,-3 v-4 c0,-2 1,-3 4,-3 Z"/>
+          <path d="M157,5 h4 v14 h-4 Z m0,-5 h4 v3 h-4 Z"/>
+          <path d="M164,5 h4 v2 c1,-2 3,-2 5,-2 c2,0 4,1 4,3 c1,-2 3,-2 5,-2 c3,0 4,2 4,5 v8 h-4 v-7 c0,-2 -1,-3 -2,-3 c-2,0 -3,1 -3,3 v7 h-4 v-7 c0,-2 -1,-3 -2,-3 c-2,0 -3,1 -3,3 v7 h-4 Z"/>
+        </g>
+
+        <text x="0" y="68" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="11" font-weight="700" fill="#f0883e">
+          Magnetic Tape
+        </text>
+
+        <text x="0" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="11" fill="#8b949e">
+          <tspan x="0" dy="0">Interactive memory simulator</tspan>
+          <tspan x="0" dy="19">demonstrating probing</tspan>
+          <tspan x="0" dy="19">sequences and collision</tspan>
+          <tspan x="0" dy="19">resolution algorithms</tspan>
+        </text>
+
+        <text x="0" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="9.5" fill="#6e7681">
+          Rapid iron oxide storage
+        </text>
+      </g>
+
+      <g transform="translate(48, 320)">
+        <g fill="#6e7681">
+          <path d="M0,0 h10 v2.5 h-7 v2.5 h5 v2 h-5 v3 h7 v2.5 h-10 Z"/>
+          <path d="M13,3 h6 v2 h-6 Z m0,4 h6 v2 h-6 Z"/>
+          <path d="M22,3 h2.5 v1.5 c1,-1.5 2,-1.5 3.5,-1.5 c1.5,0 2.5,1 2.5,2 c1,-1.5 2,-1.5 3.5,-1.5 c2,0 3,1.5 3,3.5 v5.5 h-2.5 v-5 c0,-1.5 -1,-2 -1.5,-2 c-1.5,0 -2,1 -2,2 v5 h-2.5 v-5 c0,-1.5 -1,-2 -1.5,-2 c-1.5,0 -2,1 -2,2 v5 h-2.5 Z"/>
+          <path d="M40,3 h6 v2.5 h-3.5 v4.5 h3.5 v2.5 h-6 Z"/>
+          <path d="M48,0 h4 v1.5 h-2.5 v1 h1.5 c1,0 1.5,0.5 1.5,1.5 v0.5 c0,1 -0.5,1.5 -1.5,1.5 h-3 v-1.5 h2 v-0.5 h-1.5 v-1.5 h1 v-1 h-1.5 Z"/>
+        </g>
+        
+        <text x="1104" y="10" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="10" fill="#34d399" text-anchor="end">
+          唆るぜ、これは！
+        </text>
+      </g>
+    </svg>
