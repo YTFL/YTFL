@@ -48,9 +48,9 @@
 
 
 <!-- activity graph -->
-<p align="center">
+<!-- <p align="center">
   <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=YTFL&bg_color=00000000&color=1f6feb&line=1f6feb&point=1f6feb&area=true&hide_border=true" width="1000"/>
-</p>
+</p> -->
 
 <!-- snake -->
 <p align="center">
